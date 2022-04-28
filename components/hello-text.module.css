@@ -1,0 +1,11 @@
+@import url(/styles/globals.css);
+
+.text {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 140%;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    color: var(--black);
+    max-width: 760px;
+}

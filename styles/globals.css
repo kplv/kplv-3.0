@@ -1,9 +1,22 @@
+@font-face {
+  font-family: PolySans;
+  src: url(../public/fonts/PolySansTrial-Slim.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --black: #161E23;
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: auto;
+  font-family: PolySans, Helvetica Neue, sans-serif;
+  text-rendering: optimizeLegibility;
+  max-width: 1024px;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -13,4 +26,6 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
