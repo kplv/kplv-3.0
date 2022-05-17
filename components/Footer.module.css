@@ -5,11 +5,5 @@
   color: var(--black);
   display: flex;
   list-style: none;
-}
-
-.footer li {
-  padding-right: 64px;
-  text-transform: uppercase;
-  letter-spacing: 1px;  
-  display: flex;
+  gap: 48px;
 }

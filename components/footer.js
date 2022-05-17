@@ -12,7 +12,8 @@ function Footer(props) {
           <FooterLink 
           link = {item.link}
           text={item.text}
-          key={item.id} />
+          key={item.id}
+          src={item.src} />
         ))}
       </ul>
     </footer>

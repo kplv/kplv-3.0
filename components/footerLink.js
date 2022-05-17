@@ -6,12 +6,12 @@ function FooterLink(props) {
   const { id, text, link, src } = props;
 
   return (
-    <Link href={link}>
-      <li>
-        <Image src="/social/mail.svg" width="28px" height="28px"></Image>
+    <a href={link} target='_blank'>
+      <li className={classes.link}>
+        <Image src={src} width="28px" height="28px"></Image>
         {text}
       </li>
-    </Link>
+    </a>
   );
 }
 
