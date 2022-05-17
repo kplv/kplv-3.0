@@ -1,0 +1,15 @@
+.footer {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 140%;
+  color: var(--black);
+  display: flex;
+  list-style: none;
+}
+
+.footer li {
+  padding-right: 64px;
+  text-transform: uppercase;
+  letter-spacing: 1px;  
+  display: flex;
+}
