@@ -3,6 +3,7 @@ import HelloText from '../components/hello-text';
 import Footer from '../components/footer';
 import socialData from '../socialData'
 import BottomText from '../components/bottom-text';
+import Project from '../components/project';
 
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
 
       <main>
         <HelloText />
+        <Project />
+        <Project />
+        <Project />
         
       </main>
       <Footer items={socialData}/>

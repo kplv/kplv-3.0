@@ -1,0 +1,40 @@
+.project {
+  width: 1024px;
+  height: 380px;
+  background-color: rgba(0, 255, 0, 0.3);
+  margin-bottom: 24px;
+}
+
+.header {
+  height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px var(--black) solid;
+}
+
+.body {
+    display: flex;
+    gap: 32px;
+}
+
+.pic {
+
+}
+
+.year {
+  opacity: 0.4;
+}
+
+.link {
+  opacity: 0.4;
+}
+.text {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 628px;
+}

@@ -5,5 +5,11 @@
   color: var(--black);
   display: flex;
   list-style: none;
-  gap: 48px;
+  flex-flow: wrap;
+  column-gap: 52px;
+  grid-row-gap: 16px;
+}
+
+@media screen and (max-width: 428px) {
+  .footer {flex-direction: column; gap: 8px}
 }
