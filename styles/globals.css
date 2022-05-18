@@ -6,7 +6,9 @@
 }
 
 :root {
-  --black: #161E23;
+  --black: #161e23;
+  --h1: 48px;
+  --text: 28px;
 }
 
 html,
@@ -17,6 +19,7 @@ body {
   text-rendering: optimizeLegibility;
   max-width: 1024px;
   -webkit-font-smoothing: antialiased;
+  width: fit-content;
 }
 
 a {
@@ -24,8 +27,21 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: var(--text);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  body {padding: 0 64px}
+}
+
+@media screen and (max-width: 428px) {
+  :root {--h1: 28px; --text: 20px}
+  body {padding: 0 24px}
 }

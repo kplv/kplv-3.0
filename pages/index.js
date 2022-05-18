@@ -1,14 +1,13 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import HelloText from '../components/hello-text';
-import styles from '../styles/Home.module.css';
 import Footer from '../components/footer';
 import socialData from '../socialData'
+import BottomText from '../components/bottom-text';
 
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Denis Kopylov</title>
         <meta
@@ -23,7 +22,7 @@ export default function Home() {
         
       </main>
       <Footer items={socialData}/>
-
+      <BottomText />
     </div>
   );
 }
