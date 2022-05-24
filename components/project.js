@@ -1,25 +1,32 @@
 import classes from './project.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Project(props) {
   return (
-    <div className={classes.project}>
-      <div className={classes.header}>
-        <h2 className={classes.projectName}>Arrival customer care</h2>
-        <p className={classes.year}>(2022)</p>
-      </div>
-
-      <div className={classes.body}>
-        <div className={classes.text}>
-          <p>
-            Leading a full cycle of product design of a service to help
-            customers get what they want
-          </p>
-          <p className={classes.link}>(go to project)</p>
+    <Link href="#">
+      <div className={classes.project}>
+        <div className={classes.header}>
+          <h2 className={classes.projectName}>Arrival</h2>
         </div>
-        <Image className={classes.pic} src="/preview.png" width='100%' height='100%' layout='responsive'></Image>
+
+        <div className={classes.body}>
+          <div className={classes.text}>
+            <p>
+              Leading a full cycle of product design of a service to help
+              customers get what they want
+            </p>
+          </div>
+          <Image
+            src="/preview.png"
+            width="364px"
+            height="228px"
+            objectFit="contain"
+            quality="100"
+          ></Image>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

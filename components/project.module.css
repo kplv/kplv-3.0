@@ -1,8 +1,11 @@
 .project {
-  width: 1024px;
-  height: 380px;
-  background-color: rgba(0, 255, 0, 0.3);
+  height: 390px;
   margin-bottom: 24px;
+  border-bottom: 1.5px var(--grey) solid;
+}
+
+.project:hover {
+  cursor: pointer;
 }
 
 .header {
@@ -10,16 +13,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px var(--black) solid;
+}
+
+.projectName {
+  font-size: var(--h2);
 }
 
 .body {
     display: flex;
     gap: 32px;
-}
-
-.pic {
-
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 16px;
 }
 
 .year {
@@ -30,11 +35,11 @@
   opacity: 0.4;
 }
 .text {
-  padding-top: 24px;
   padding-bottom: 32px;
   height: 284px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 628px;
+  max-width: 61%;
+  
 }
