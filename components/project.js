@@ -1,6 +1,7 @@
 import classes from './project.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import TagList from './tagList'
 
 function Project(props) {
   return (
@@ -8,6 +9,7 @@ function Project(props) {
       <div className={classes.project}>
         <div className={classes.header}>
           <h2 className={classes.projectName}>Arrival</h2>
+          <TagList/>
         </div>
 
         <div className={classes.body}>

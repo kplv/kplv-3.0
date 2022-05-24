@@ -1,9 +1,17 @@
 @font-face {
   font-family: PolySans;
   src: url(../public/fonts/PolySansTrial-Slim.otf);
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: PolySans;
+  src: url(../public/fonts/PolySansTrial-Median.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 :root {
   --black: #161e23;
@@ -11,6 +19,7 @@
   --h1: 48px;
   --h2: 36px;
   --text: 28px;
+  --caption: 16px;
 }
 
 ::selection {
