@@ -1,5 +1,5 @@
 import classes from './bottom-text.module.css'
-import { bottomText } from '../textData';
+import { bottomText } from '../data/textData';
 
 
 

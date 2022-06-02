@@ -1,4 +1,4 @@
-import { helloTextData } from '../textData';
+import { helloTextData } from '../data/textData';
 import classes from './hello-text.module.css';
 
 

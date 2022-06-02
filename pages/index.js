@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import HelloText from '../components/hello-text';
 import Footer from '../components/footer';
-import socialData from '../socialData'
+import socialData from '../data/socialData';
 import BottomText from '../components/bottom-text';
 import Project from '../components/project';
-
+import Tag from '../components/tag';
 
 export default function Home() {
   return (
@@ -23,9 +23,8 @@ export default function Home() {
         <Project />
         <Project />
         <Project />
-        
       </main>
-      <Footer items={socialData}/>
+      <Footer items={socialData} />
       <BottomText />
     </div>
   );
