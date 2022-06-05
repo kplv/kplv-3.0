@@ -1,9 +1,9 @@
 .tag {
   font-size: var(--caption);
-  color: #a273fe;
+  color: var(--black);
   font-weight: 600;
   padding: 5px 8px 7px 8px;
-  background-color: rgba(162, 115, 254, 0.1);
+  background-color: rgba(25, 33, 36, 0.1);
   display: flex;
   align-items: center;
   border-radius: 6px;

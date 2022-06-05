@@ -1,10 +1,9 @@
 import classes from './bottom-text.module.css'
-import { bottomText } from '../data/textData';
-
+import texts from '../data/texts.json'
 
 
 function BottomText() {
- return <p className={classes.text}>{bottomText}</p>
+ return <p className={classes.text}>{texts.bottom}</p>
 }
 
 export default BottomText

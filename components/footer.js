@@ -3,8 +3,7 @@ import FooterLink from './footerLink';
 
 function Footer(props) {
   const { items } = props;
-  console.log(items);
-
+  
   return (
     <footer>
       <ul className={classes.footer}>

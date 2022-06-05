@@ -5,6 +5,8 @@ import socialData from '../data/socialData';
 import BottomText from '../components/bottom-text';
 import Project from '../components/project';
 import Tag from '../components/tag';
+import texts from '../data/texts.json'
+
 
 export default function Home() {
   return (

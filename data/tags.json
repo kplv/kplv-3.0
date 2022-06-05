@@ -1,0 +1,15 @@
+{
+    "e-vehicles" : {
+        "text": "e-vehicles",
+        "id": "e-vehicles",
+        "textColor": "#A273FE",
+        "backColor": "rgba(162, 115, 254, 0.1)",
+        "isIcon": true
+    },
+    "startup" : {
+        "text": "startup",
+        "id": "startup",
+        "textColor": "#FE73CB",
+        "backColor": "rgba(254, 115, 203, 0.1)"
+    }
+}

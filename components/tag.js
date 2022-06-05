@@ -2,7 +2,7 @@ import classes from './tag.module.css';
 
 function Tag(props) {
   const { backColor, text,textColor, isIcon } = props;
-  console.log(props);
+  // console.log(props);
 
   if (isIcon) {
     return (
