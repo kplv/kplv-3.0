@@ -2,13 +2,11 @@ import Tag from './tag';
 import classes from './tagList.module.css';
 import tags from '../data/tags.json';
 
-console.log(tags);
+function TagList(props) {
+  const { allTags } = props;
 
-const color = 'rgba(200, 255, 10, 0.1)';
-const tagName = 'e-vehicles';
-const isIcon = true;
+  // console.log(allTags)
 
-function TagList() {
   return (
     <div className={classes.list}>
       <Tag

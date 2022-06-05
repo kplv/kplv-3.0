@@ -4,27 +4,27 @@ import Footer from '../components/footer';
 import socialData from '../data/socialData';
 import BottomText from '../components/bottom-text';
 import Project from '../components/project';
-import Tag from '../components/tag';
-import texts from '../data/texts.json'
-
+import projects from '../data/projects.json';
+import ProjectList from '../components/projectsList'
 
 export default function Home() {
+  const allProjects = Object.values(projects);
+  // console.log(allProjects)
+
   return (
     <div>
       <Head>
         <title>Denis Kopylov</title>
         <meta
-          name="description"
-          content="Denis Kopylov senior product designer"
+          name='description'
+          content='Denis Kopylov senior product designer'
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main>
         <HelloText />
-        <Project />
-        <Project />
-        <Project />
+        <ProjectList items={allProjects} />
       </main>
       <Footer items={socialData} />
       <BottomText />
