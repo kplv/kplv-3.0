@@ -6,7 +6,7 @@ import tags from '../data/tags.json'
 
 function Project(props) {
 
-  const {header, description} = props;
+  const {header, description,image} = props;
 
   
   return (
@@ -24,7 +24,7 @@ function Project(props) {
             </p>
           </div>
           <Image
-            src='/preview.png'
+            src={image}
             width='364px'
             height='228px'
             objectFit='contain'

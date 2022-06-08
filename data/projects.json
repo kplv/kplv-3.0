@@ -2,16 +2,19 @@
   "arrival": {
     "id": "arrival",
     "header": "Arrival",
-    "description": "Leading a full cycle of product design of a service to help customers get what they want"
+    "description": "Leading a full cycle of product design of a service to help customers get what they want",
+    "image": "/arrival.png"
   },
   "devices": {
     "id": "devices",
     "header": "SberDevices",
-    "description": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants"
+    "description": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants",
+    "image": "/sber.png"
   },
-  "kek": {
-    "id": "kek",
-    "header": "kek",
-    "description": "bruh"
+  "other": {
+    "id": "other",
+    "header": "Yandex, Badoo, One Double, & Maestrello ",
+    "description": "Services and apps, ranging from small local products to large tech companies",
+    "image": "/other.png"
   }
 }
