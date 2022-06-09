@@ -16,11 +16,11 @@
 :root {
   --black: #161e23;
   --grey: rgba(22, 30, 35, 0.2);
+  --grey40: rgba(22, 30, 35, 0.4);
   --h1: 48px;
   --h2: 36px;
   --text: 28px;
   --caption: 16px;
-  --accent: #FA1C34;
 }
 
 ::selection {
@@ -42,6 +42,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 
 p {

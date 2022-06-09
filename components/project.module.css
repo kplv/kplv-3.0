@@ -6,8 +6,9 @@
 }
 
 .project:hover {
-  color: var(--accent);
+  color: var(--grey40);
   transition: all 0.2s ease-out;
+  
 }
 
 .project:hover {

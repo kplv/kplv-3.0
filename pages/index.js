@@ -3,9 +3,10 @@ import HelloText from '../components/hello-text';
 import Footer from '../components/footer';
 import socialData from '../data/socialData';
 import BottomText from '../components/bottom-text';
-import Project from '../components/project';
 import projects from '../data/projects.json';
 import ProjectList from '../components/projectsList'
+import Header from '../components/header';
+
 
 export default function Home() {
   const allProjects = Object.values(projects);
@@ -23,6 +24,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <Header/>
         <HelloText />
         <ProjectList items={allProjects} />
       </main>

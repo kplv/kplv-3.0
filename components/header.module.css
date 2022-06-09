@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.link {
+  font-size: var(--text);
+  transition: all 0.1s ease-out;
+}
+
+.link:hover {
+  opacity: 0.4;
+  transition: all 0.1s ease-out;
+}
