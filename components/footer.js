@@ -5,7 +5,7 @@ function Footer(props) {
   const { items } = props;
   
   return (
-    <footer>
+    <footer id='contacts'>
       <ul className={classes.footer}>
         {items.map((item) => (
           <FooterLink 

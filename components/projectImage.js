@@ -1,7 +1,5 @@
-import { Fragment } from 'react';
 import classes from './projectImage.module.css';
 import Image from 'next/image';
-import Spacer from './spacer';
 import ImageDescription from './projectImageDescription';
 
 function ProjectImage(props) {
