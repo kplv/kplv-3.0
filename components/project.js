@@ -2,26 +2,23 @@ import classes from './project.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import TagList from './tagList';
-import tags from '../data/tags.json'
+import tags from '../data/tags.json';
 
 function Project(props) {
+  const { header, description, image, id } = props;
+  const link = `/${id}`
 
-  const {header, description,image} = props;
-
-  
   return (
-    <Link href='#'>
+    <Link href={link}>
       <div className={classes.project}>
         <div className={classes.header}>
           <h2 className={classes.projectName}>{header}</h2>
-          <TagList allTags={tags}/>
+          <TagList allTags={tags} />
         </div>
 
         <div className={classes.body}>
           <div className={classes.text}>
-            <p>
-              {description}
-            </p>
+            <p>{description}</p>
           </div>
           <Image
             src={image}

@@ -9,6 +9,7 @@ function ProjectsList(props) {
       description={item.description}
       key={item.id}
       image={item.image}
+      id={item.id}
     />
   ));
 
