@@ -6,7 +6,7 @@ import tags from '../data/tags.json';
 
 function Project(props) {
   const { header, description, image, id } = props;
-  const link = `/${id}`
+  const link = `/${id}`;
 
   return (
     <Link href={link}>
