@@ -3,7 +3,8 @@
     "id": "arrival",
     "header": "Arrival",
     "description": "Leading a full cycle of product design of a service to help customers get what they want",
-    "image": "/arrival.png"
+    "image": "/arrival.png",
+    "tags": ["one", "two", "three"]
   },
   "devices": {
     "id": "devices",

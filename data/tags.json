@@ -1,15 +1,51 @@
 {
-    "e-vehicles" : {
-        "text": "e-vehicles",
-        "id": "e-vehicles",
-        "textColor": "#A273FE",
-        "backColor": "rgba(162, 115, 254, 0.1)",
-        "isIcon": true
-    },
-    "startup" : {
-        "text": "startup",
-        "id": "startup",
-        "textColor": "#FE73CB",
-        "backColor": "rgba(254, 115, 203, 0.1)"
-    }
+  "e-vehicles": {
+    "text": "e-vehicles",
+    "id": "e-vehicles",
+    "textColor": "#A273FE",
+    "backColor": "rgba(162, 115, 254, 0.1)",
+    "isIcon": true
+  },
+  "startup": {
+    "text": "startup",
+    "id": "startup",
+    "textColor": "#FE73CB",
+    "backColor": "rgba(254, 115, 203, 0.1)"
+  },
+  "b2b": {
+    "text": "b2b",
+    "id": "b2b",
+    "textColor": "rgba(28, 65, 250, 1)",
+    "backColor": "rgba(28, 65, 250, 0.1)"
+  },
+  "urban": {
+    "text": "urban",
+    "id": "urban",
+    "textColor": "rgba(126, 57, 255, 1)",
+    "backColor": "rgba(126, 57, 255, 0.1)"
+  },
+  "zero to one": {
+    "text": "zero to one",
+    "id": "zero to one",
+    "textColor": "rgba(255, 107, 57, 1)",
+    "backColor": "rrgba(255, 107, 57, 0.1)"
+  },
+  "b2c": {
+    "text": "b2c",
+    "id": "b2c",
+    "textColor": "rgba(18, 224, 76, 1)",
+    "backColor": "rgba(18, 224, 76, 0.1)"
+  },
+  "locals": {
+    "text": "locals",
+    "id": "locals",
+    "textColor": "rgba(57, 86, 255, 1)",
+    "backColor": "rgba(57, 86, 255, 0.1)"
+  },
+  "award": {
+    "text": "award concepts",
+    "id": "award",
+    "textColor": "rgba(255, 57, 94, 1)",
+    "backColor": "rgba(255, 57, 94, 0.1)"
+  }
 }

@@ -7,7 +7,7 @@ function Header() {
       <Link href='/'>
         <a className={classes.link}>Denis Kopylov</a>
       </Link>
-      <Link href='/#contacts'>
+      <Link href='#contacts'>
         <a className={classes.link}>Contacts</a>
       </Link>
     </header>

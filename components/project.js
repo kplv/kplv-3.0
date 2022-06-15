@@ -5,14 +5,15 @@ import TagList from './tagList';
 import tags from '../data/tags.json';
 
 function Project(props) {
-  const { header, description, image, id } = props;
+  const { header, description, image, id,tags } = props;
   const link = `/${id}`;
+  
 
   return (
     <Link href={link}>
       <div className={classes.project}>
         <div className={classes.header}>
-          <h2 className={classes.projectName}>{header}</h2>
+          <h2 className={classes.projectName}>{id}</h2>
           <TagList allTags={tags} />
         </div>
 

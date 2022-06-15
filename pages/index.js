@@ -1,12 +1,18 @@
+import fs from 'fs/promises';
+import path from 'path';
 import Head from 'next/head';
 import HelloText from '../components/hello-text';
-import projects from '../data/projects.json';
-import ProjectList from '../components/projectsList'
+// import projects from '../data/projects.json';
+import ProjectList from '../components/projectsList';
 
+export default function Home(props) {
+  const { projects } = props;
+  console.log(projects)
+  
 
-export default function Home() {
-  const allProjects = Object.values(projects);
-  // console.log(allProjects)
+  // const allProjects = Object.values(projects);
+  // console.log(allProjects);
+  
 
   return (
     <div>
@@ -21,8 +27,21 @@ export default function Home() {
 
       <main>
         <HelloText />
-        <ProjectList items={allProjects} />
+        <ProjectList items={projects} />
       </main>
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const filePath = path.join(process.cwd(), 'data', 'data.json');
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData);
+
+  return {
+    props: {
+      projects: data.projects,
+    },
+    revalidate: 10,
+  };
 }

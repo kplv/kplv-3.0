@@ -2,7 +2,7 @@ import Project from './project';
 
 function ProjectsList(props) {
   const { items } = props;
-
+  
   return items.map((item) => (
     <Project
       header={item.header}
@@ -10,6 +10,7 @@ function ProjectsList(props) {
       key={item.id}
       image={item.image}
       id={item.id}
+      tags={item.tags}
     />
   ));
 

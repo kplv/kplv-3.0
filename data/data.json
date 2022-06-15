@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "id": "Arrival",
+      "description": "Leading a full cycle of product design of a service to help customers get what they want",
+      "image": "/arrival.png"
+    },
+    {
+      "id": "SberDevices",
+      "description": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants",
+      "image": "/sber.png"
+    },
+    {
+      "id": "Yandex, Badoo, One Double, & Maestrello",
+      "description": "Services and apps, ranging from small local products to large tech companies",
+      "image": "/other.png"
+    }
+  ]
+}
