@@ -2,17 +2,10 @@ import fs from 'fs/promises';
 import path from 'path';
 import Head from 'next/head';
 import HelloText from '../components/hello-text';
-// import projects from '../data/projects.json';
 import ProjectList from '../components/projectsList';
 
 export default function Home(props) {
   const { projects } = props;
-  console.log(projects)
-  
-
-  // const allProjects = Object.values(projects);
-  // console.log(allProjects);
-  
 
   return (
     <div>

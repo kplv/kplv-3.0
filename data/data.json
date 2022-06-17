@@ -3,17 +3,33 @@
     {
       "id": "Arrival",
       "description": "Leading a full cycle of product design of a service to help customers get what they want",
-      "image": "/arrival.png"
+      "image": "/arrival.png",
+      "projectTags": ["one", "two"]
     },
     {
       "id": "SberDevices",
       "description": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants",
-      "image": "/sber.png"
+      "image": "/sber.png",
+      "projectTags": ["one", "two", "three"]
     },
     {
       "id": "Yandex, Badoo, One Double, & Maestrello",
       "description": "Services and apps, ranging from small local products to large tech companies",
       "image": "/other.png"
+    }
+  ],
+  "tags": [
+    {
+      "text": "zero to one",
+      "id": "zero to one",
+      "textColor": "rgba(255, 107, 57, 1)",
+      "backColor": "rrgba(255, 107, 57, 0.1)"
+    },
+    {
+      "text": "b2c",
+      "id": "b2c",
+      "textColor": "rgba(18, 224, 76, 1)",
+      "backColor": "rgba(18, 224, 76, 0.1)"
     }
   ]
 }

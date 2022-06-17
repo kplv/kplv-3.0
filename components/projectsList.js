@@ -10,7 +10,7 @@ function ProjectsList(props) {
       key={item.id}
       image={item.image}
       id={item.id}
-      tags={item.tags}
+      projectTags={item.projectTags}
     />
   ));
 

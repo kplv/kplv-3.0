@@ -5,7 +5,8 @@ import TagList from './tagList';
 import tags from '../data/tags.json';
 
 function Project(props) {
-  const { header, description, image, id,tags } = props;
+  const { description, image, id, projectTags} = props;
+  
   const link = `/${id}`;
   
 
