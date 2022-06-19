@@ -6,7 +6,6 @@ import tags from '../data/tags.json';
 
 function Project(props) {
   const { description, image, id, projectTags} = props;
-  
   const link = `/${id}`;
   
 
@@ -15,7 +14,7 @@ function Project(props) {
       <div className={classes.project}>
         <div className={classes.header}>
           <h2 className={classes.projectName}>{id}</h2>
-          <TagList allTags={tags} />
+          <TagList projectTags={projectTags} />
         </div>
 
         <div className={classes.body}>

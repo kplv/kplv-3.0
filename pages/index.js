@@ -30,6 +30,9 @@ export async function getStaticProps(context) {
   const filePath = path.join(process.cwd(), 'data', 'data.json');
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);
+  console.log(data + 'index.js')
+  
+  
 
   return {
     props: {

@@ -1,51 +1,59 @@
-import Tag from './tag';
-import classes from './tagList.module.css';
-import tags from '../data/tags.json';
+import Tag from "./tag";
+import classes from "./tagList.module.css";
+import allTags from "../data/tags.json";
 
 function TagList(props) {
   const { projectTags } = props;
-console.log(props)
 
-  
+  console.log;
 
-  // if (!projectTags) {
-  //   console.log('no tag for this projects');
-  // } else {
-  //   projectTags.map((tag) => console.log(tag));
-  // }
-
-  
-
-  // return (
-  //   <div className={classes.list}>
-  //     <Tag
-  //       text={tags['e-vehicles'].text}
-  //       backColor={tags['e-vehicles'].backColor}
-  //       textColor={tags['e-vehicles'].textColor}
-  //       isIcon={tags['e-vehicles'].isIcon}
-  //     />
-  //     <Tag
-  //       text={tags.startup.text}
-  //       backColor={tags.startup.backColor}
-  //       textColor={tags.startup.textColor}
-  //     />
-  //   </div>
-  // );
+    return (
+    <div className={classes.list}>
+      {projectTags.map((projectTag) =>
+        allTags.tags.map((tag) => {
+          if (projectTag === tag.id) {
+            console.log(tag.id);
+            return (
+              <Tag
+                text={tag.text}
+                backColor={tag.backColor}
+                textColor={tag.textColor}
+                isIcon={tag.isIcon}
+              />
+            );
+          }
+        })
+      )}
+    </div>
+  );
 }
 
 // export async function getStaticProps(context) {
-//   const filePath = path.join(process.cwd(), 'data', 'data.json');
+//   const filePath = path.join(process.cwd(), "data", "tags.json");
 //   const jsonData = await fs.readFile(filePath);
 //   const data = JSON.parse(jsonData);
+//   console.log(data);
 
 //   return {
 //     props: {
-//       tags: data.tags,
+//       allTags: data.tags,
+//     },
+//     revalidate: 100,
+//   };
+// }
+
+// export async function getStaticProps(context) {
+//   const filePath = path.join(process.cwd(), 'data', 'tags.json');
+//   const jsonData = await fs.readFile(filePath);
+//   const data = JSON.parse(jsonData);
+//   console.log(data + 'tagList')
+
+//   return {
+//     props: {
+//       projects: data.projects,
 //     },
 //     revalidate: 10,
 //   };
 // }
 
-
 export default TagList;
-
