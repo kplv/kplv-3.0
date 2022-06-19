@@ -5,7 +5,7 @@ function ProjectsList(props) {
   
   return items.map((item) => (
     <Project
-      header={item.header}
+      name={item.name}
       description={item.description}
       key={item.id}
       image={item.image}

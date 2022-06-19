@@ -1,7 +1,7 @@
 .project {
   height: 390px;
   margin-bottom: 24px;
-  border-bottom: 1.5px var(--grey) solid;
+  border-bottom: 2px var(--grey10) solid;
   transition: all 0.2s ease-out;
 }
 
