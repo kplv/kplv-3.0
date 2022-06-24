@@ -8,9 +8,9 @@
   flex-flow: wrap;
   column-gap: 52px;
   grid-row-gap: 16px;
-  margin-top: 170px;
+  padding-top: 170px;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 640px) {
   .footer {flex-direction: column; gap: 8px}
 }

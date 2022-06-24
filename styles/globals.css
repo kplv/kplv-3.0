@@ -87,9 +87,11 @@ section {
 @media screen and (max-width: 428px) {
   :root {
     --h1: 28px;
+    --h2: 28px;
     --text: 20px;
   }
   body {
     padding: 0 24px;
   }
+  
 }

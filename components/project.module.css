@@ -1,14 +1,14 @@
 .project {
-  height: 390px;
+  height: auto;
   margin-bottom: 24px;
   border-bottom: 2px var(--grey10) solid;
   transition: all 0.2s ease-out;
+  padding-bottom: 32px;
 }
 
 .project:hover {
   color: var(--grey40);
   transition: all 0.2s ease-out;
-  
 }
 
 .project:hover {
@@ -16,8 +16,9 @@
 }
 
 .header {
-  height: 96px;
+  padding-bottom: 32px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,11 +28,11 @@
 }
 
 .body {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 16px;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 16px;
 }
 
 .year {
@@ -42,12 +43,28 @@
   opacity: 0.4;
 }
 .text {
+  height: 100%;
   padding-bottom: 32px;
-  height: 284px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 61%;
-  
 }
 
+.projectName {
+  padding-right: 64px;
+}
+
+@media screen and (max-width: 428px) {
+  .header {
+    height: auto;
+  }
+  .body {
+    padding-top: 24px;
+    flex-direction: column;
+  }
+  .text {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+}
