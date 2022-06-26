@@ -16,7 +16,6 @@
 }
 
 .header {
-  padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -58,6 +57,7 @@
 @media screen and (max-width: 428px) {
   .header {
     height: auto;
+    padding-bottom: 0;
   }
   .body {
     padding-top: 24px;

@@ -1,7 +1,10 @@
 import classes from './projectImageDescription.module.css';
 
 function ImageDescription(props) {
-  return <span className={classes.description}>User block evolution</span>;
+
+  const {caption} = props
+
+  return <span className={classes.description}>{caption}</span>;
 }
 
 export default ImageDescription;

@@ -16,6 +16,11 @@
         {
           "type": "text",
           "data": "Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci. Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat a suscipit. Sed ultrices auctor iaculis."
+        },
+        {
+          "type": "image",
+          "src": "/sber.png",
+          "caption": "First Iteration"
         }
       ]
     }

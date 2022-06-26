@@ -1,0 +1,29 @@
+{
+    "blocks": [
+      {
+        "id": "1",
+        "content": [
+          {
+            "type": "text",
+            "data": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants."
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "content": [
+          { "type": "header", "data": "Initial problem" },
+          {
+            "type": "text",
+            "data": "Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci. Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat a suscipit. Sed ultrices auctor iaculis."
+          },
+          {
+            "type": "image",
+            "src": "/arrival.png",
+            "caption": "First Iteration"
+          }
+        ]
+      }
+    ]
+  }
+  

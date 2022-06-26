@@ -6,9 +6,30 @@ import path from "path";
 
 function ProjectPage(props) {
   const { blocks } = props;
-  // console.log(blocks);
+  console.log(blocks);
   const router = useRouter();
   const projectId = router.query.id;
+
+  return blocks.map((block) => {
+    return (
+      <section key={block.id}>
+        {block.content.map((contentItem) => {
+          if (contentItem.type === "text") {
+            return <p>{contentItem.data}</p>;
+          }
+
+          if (contentItem.type === "header") {
+            return <h2 className="sectionHeader">{contentItem.data}</h2>;
+          }
+
+          if ((contentItem.type === "image")) {
+            console.log('we have an image!');
+            return <ProjectImage src={contentItem.src} caption={contentItem.caption}/>
+          }
+        })}
+      </section>
+    );
+  });
 
   /*   return blocks.map((block) => {
     block.content.map((item) => {
@@ -18,7 +39,7 @@ function ProjectPage(props) {
 
   // blocks.content.map((item) => console.log(item));
 
-/*   return blocks.map((block) =>
+  /*   return blocks.map((block) =>
   block.content.map((data) => {
     return <section><p>{data.data}</p></section>;
   })
