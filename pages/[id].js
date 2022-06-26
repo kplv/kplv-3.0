@@ -3,15 +3,15 @@ import { Fragment } from "react";
 import ProjectImage from "../components/projectImage";
 import fs from "fs/promises";
 import path from "path";
+import Head from "next/head";
 
 function ProjectPage(props) {
   const { blocks } = props;
   console.log(blocks);
-  const router = useRouter();
-  const projectId = router.query.id;
 
   return blocks.map((block) => {
     return (
+      
       <section key={block.id}>
         {block.content.map((contentItem) => {
           if (contentItem.type === "text") {
@@ -22,14 +22,24 @@ function ProjectPage(props) {
             return <h2 className="sectionHeader">{contentItem.data}</h2>;
           }
 
-          if ((contentItem.type === "image")) {
-            console.log('we have an image!');
-            return <ProjectImage src={contentItem.src} caption={contentItem.caption}/>
+          if (contentItem.type === "image") {
+            console.log("we have an image!");
+            return (
+              <ProjectImage
+                src={contentItem.src}
+                caption={contentItem.caption}
+              />
+            );
           }
         })}
       </section>
     );
-  });
+  }
+  
+  
+
+  );
+
 
   /*   return blocks.map((block) => {
     block.content.map((item) => {
@@ -109,14 +119,19 @@ export async function getStaticPaths() {
     paths: [
       // String variant:
       "/arrival",
+      "/sber",
       // Object variant:
     ],
-    fallback: true,
+    fallback: false,
   };
 }
 
-export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), "data/projects", "arrival.json");
+export async function getStaticProps({ params }) {
+  const filePath = path.join(
+    process.cwd(),
+    "data/projects",
+    `${params.id}.json`
+  );
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);
 

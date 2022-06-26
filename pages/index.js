@@ -1,38 +1,38 @@
-import fs from 'fs/promises';
-import path from 'path';
-import Head from 'next/head';
-import HelloText from '../components/hello-text';
-import ProjectList from '../components/projectsList';
+import fs from "fs/promises";
+import path from "path";
+import Head from "next/head";
+import HelloText from "../components/hello-text";
+import ProjectList from "../components/projectsList";
+import { Fragment } from "react";
 
 export default function Home(props) {
   const { projects } = props;
 
   return (
-    <div>
+    <Fragment>
       <Head>
         <title>Denis Kopylov</title>
         <meta
-          name='description'
-          content='Denis Kopylov senior product designer'
+          name="description"
+          content="Denis Kopylov senior product designer"
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <HelloText />
-        <ProjectList items={projects} />
-      </main>
-    </div>
+      <div>
+        <main>
+          <HelloText />
+          <ProjectList items={projects} />
+        </main>
+      </div>
+    </Fragment>
   );
 }
 
 export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
+  const filePath = path.join(process.cwd(), "data", "data.json");
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);
-  console.log(data + 'index.js')
-  
-  
+  console.log(data + "index.js");
 
   return {
     props: {
@@ -41,4 +41,3 @@ export async function getStaticProps(context) {
     revalidate: 10,
   };
 }
-
