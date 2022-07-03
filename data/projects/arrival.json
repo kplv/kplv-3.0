@@ -5,22 +5,112 @@
       "content": [
         {
           "type": "text",
-          "data": "Arrival is a UK startup focused on full developemnt cycle of zero-emission vehicles."
+          "data": "Arrival is a UK startup focused on full developemnt cycle of zero-emission vehicles. It's one of the largest UK tech companies with $13 billion valuation."
         }
       ]
     },
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "Initial problem" },
+        { "type": "header", "data": "My role" },
         {
           "type": "text",
-          "data": "Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci. Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat a suscipit. Sed ultrices auctor iaculis."
+          "data": "I joined the team at the end of 2021 and I'm responsible for all customer support interactions. I formulate user scenarios, conduct UX researches, negotiate with core stakeholders, and support devs with implementation."
         },
         {
           "type": "image",
-          "src": "/sber.png",
-          "caption": "First Iteration"
+          "src": "/projects/arrival/arrival-1.png",
+          "caption": "Chat & full customer information"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": [
+        { "type": "header", "data": "Product" },
+        {
+          "type": "text",
+          "data": "The core two products we design are internal agent space and customer support page. They require whole different approaches, yet should be simple and straightforward to use."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-3.png",
+          "caption": "Agent chats & customer FAQ"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
+        { "type": "header", "data": "Data dilemma" },
+        {
+          "type": "text",
+          "data": "We have a bunch of services under the hood. Sure we can show all info about a customer. But we may overload an agent with details. That’s why we highlight user current scenario. If we see a customer is in a ride, it’s likely her question connected with this ride."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-4.png",
+          "caption": "User in different flows"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": [
+        { "type": "header", "data": "Research insights" },
+        {
+          "type": "text",
+          "data": "We conducted interviews with our agents and supervisors. It appeared that most of support systems suffer from lack of information. So we came with an idea to enrich our smart block with links to different data pages."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-5.png",
+          "caption": "Block are links to full data pages"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-6.png",
+          "caption": "Full data page example "
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "content": [
+        { "type": "header", "data": "Hub definition" },
+        {
+          "type": "text",
+          "data": "Sometimes you have to dive into a problem and search something not entirely connected to a customer. To cover these needs we designed pages for tickets, users, and vehicles. With search, deliberate filters, and highlight blocks."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-7.png",
+          "caption": "Tickets page"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-8.png",
+          "caption": "Users pages"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-9.png",
+          "caption": "Vehicles page"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "content": [
+        { "type": "header", "data": "Outcomes" },
+        {
+          "type": "text",
+          "data": "For me, It's a project which requires a deep understanding of whole company processes. Starting from our business model to vehicles hardware parts. I had a lot of stake holders meetings and collaboration workshops with other teams. As for our team results, we implemented MVP version of an agent portal. Also, we're constantly improving user Help & Support portal experience."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-10.png",
+          "caption": "View of help article"
         }
       ]
     }

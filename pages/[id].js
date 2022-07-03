@@ -1,115 +1,65 @@
-import { useRouter } from "next/router";
-import { Fragment } from "react";
-import ProjectImage from "../components/projectImage";
-import fs from "fs/promises";
-import path from "path";
-import Head from "next/head";
+import { useRouter } from 'next/router';
+import { Fragment } from 'react';
+import ProjectImage from '../components/projectImage';
+import fs from 'fs/promises';
+import path from 'path';
+import Project from '../components/project';
 
 function ProjectPage(props) {
-  const { blocks } = props;
-  console.log(blocks);
+  const { blocks, projects } = props;
+  const projectId = useRouter().query.id;
+  console.log(projectId);
 
-  return blocks.map((block) => {
-    return (
-      
-      <section key={block.id}>
-        {block.content.map((contentItem) => {
-          if (contentItem.type === "text") {
-            return <p>{contentItem.data}</p>;
-          }
-
-          if (contentItem.type === "header") {
-            return <h2 className="sectionHeader">{contentItem.data}</h2>;
-          }
-
-          if (contentItem.type === "image") {
-            console.log("we have an image!");
-            return (
-              <ProjectImage
-                src={contentItem.src}
-                caption={contentItem.caption}
-              />
-            );
-          }
-        })}
-      </section>
-    );
+  function findNextProject() {
+    if (projectId === 'arrival') {
+      return 1;
+    } else if (projectId === 'sber') {
+      return 2;
+    } else {
+      return 0;
+    }
   }
-  
-  
 
-  );
+  const nextProjectNumber = findNextProject();
 
-
-  /*   return blocks.map((block) => {
-    block.content.map((item) => {
-      return <p>{item.data}</p>;
-    });
-  }); */
-
-  // blocks.content.map((item) => console.log(item));
-
-  /*   return blocks.map((block) =>
-  block.content.map((data) => {
-    return <section><p>{data.data}</p></section>;
-  })
-); */
-
-  /*   return blocks.map((block) =>
-    block.content.map((data) => {
-      return (
-        <section>
-          <p>{data.data}</p>
-        </section>
-      );
-    })
-  ); */
-
-  /*   blocks.map((block) => {
-    block.map((content) => {
-      console.log(content.data);
-    });
-  }); */
-
-  // blocks.map((block) => {
-  //   console.log(block.content);
-  //   return (
-  //     <section>
-  //       <p>{block.content}</p>
-  //     </section>
-  //   );
-  // });
-
-  /* return (
+  return (
     <Fragment>
-      <section>
-        <p>
-          Arrival is a UK startup focused on full developemnt cycle
-          of zero-emission vehicles.
-        </p>
-      </section>
+      {blocks.map((block) => {
+        return (
+          <section key={block.id}>
+            {block.content.map((contentItem) => {
+              if (contentItem.type === 'text') {
+                return <p>{contentItem.data}</p>;
+              }
 
-      <section>
-        <h2 className="sectionHeader">My role</h2>
-        <p>
-          Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci.
-          Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat
-          a suscipit. Sed ultrices auctor iaculis.
-        </p>
-      </section>
+              if (contentItem.type === 'header') {
+                return <h2 className='sectionHeader'>{contentItem.data}</h2>;
+              }
 
-      <section>
-        <h2 className="sectionHeader">My role</h2>
-        <p>
-          Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci.
-          Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat
-          a suscipit. Sed ultrices auctor iaculis.
-        </p>
-        <ProjectImage />
-        <ProjectImage />
-      </section>
+              if (contentItem.type === 'image') {
+                return (
+                  <ProjectImage
+                    src={contentItem.src}
+                    caption={contentItem.caption}
+                  />
+                );
+              }
+            })}
+          </section>
+        );
+      })}
+      <h2 className='sectionHeader'>Next project</h2>
+
+      <Project
+        name={projects[nextProjectNumber].name}
+        description={projects[nextProjectNumber].description}
+        key={projects[nextProjectNumber].id}
+        image={projects[nextProjectNumber].image}
+        id={projects[nextProjectNumber].id}
+        projectTags={projects[nextProjectNumber].projectTags}
+      />
     </Fragment>
-  ); */
+  );
 }
 
 export default ProjectPage;
@@ -118,8 +68,9 @@ export async function getStaticPaths() {
   return {
     paths: [
       // String variant:
-      "/arrival",
-      "/sber",
+      '/arrival',
+      '/sber',
+      '/other',
       // Object variant:
     ],
     fallback: false,
@@ -129,16 +80,21 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const filePath = path.join(
     process.cwd(),
-    "data/projects",
+    'data/projects',
     `${params.id}.json`
   );
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);
 
+  const filePathProjects = path.join(process.cwd(), 'data', 'data.json');
+  const jsonDataProjects = await fs.readFile(filePathProjects);
+  const dataProjects = JSON.parse(jsonDataProjects);
+
   return {
     props: {
       blocks: data.blocks,
+      projects: dataProjects.projects,
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
