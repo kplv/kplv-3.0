@@ -4,6 +4,7 @@ import ProjectImage from '../components/projectImage';
 import fs from 'fs/promises';
 import path from 'path';
 import Project from '../components/project';
+import Head from 'next/head';
 
 function ProjectPage(props) {
   const { blocks, projects } = props;
@@ -58,6 +59,14 @@ function ProjectPage(props) {
         id={projects[nextProjectNumber].id}
         projectTags={projects[nextProjectNumber].projectTags}
       />
+      <Head>
+        <title>Some project</title>
+        <meta
+          name='description'
+          content='Denis Kopylov senior product designer'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
     </Fragment>
   );
 }
