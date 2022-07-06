@@ -1,35 +1,112 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (() => {
 var exports = {};
-exports.id = "pages/_error";
-exports.ids = ["pages/_error"];
+exports.id = 820;
+exports.ids = [820];
 exports.modules = {
 
-/***/ "./pages/_error.js":
-/*!*************************!*\
-  !*** ./pages/_error.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 7345:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction ErrorPage(props) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n        children: \"Nothing to see her\\u2026\"\n    }, void 0, false, {\n        fileName: \"/Users/deniskopylov/Documents/dev/kplv 3.0/pages/_error.js\",\n        lineNumber: 2,\n        columnNumber: 10\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ErrorPage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fZXJyb3IuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7QUFBQSxTQUFTQSxTQUFTLENBQUNDLEtBQUssRUFBRTtJQUN4QixxQkFBTyw4REFBQ0MsSUFBRTtrQkFBQywwQkFBbUI7Ozs7O1lBQUssQ0FBQztDQUNyQztBQUVELGlFQUFlRixTQUFTLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rcGx2MC8uL3BhZ2VzL19lcnJvci5qcz8yMDEwIl0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIEVycm9yUGFnZShwcm9wcykge1xuICByZXR1cm4gPGgxPk5vdGhpbmcgdG8gc2VlIGhlcuKApjwvaDE+O1xufVxuXG5leHBvcnQgZGVmYXVsdCBFcnJvclBhZ2U7XG4iXSwibmFtZXMiOlsiRXJyb3JQYWdlIiwicHJvcHMiLCJoMSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_error.js\n");
+
+Object.defineProperty(exports, "__esModule", ({
+    value: true
+}));
+exports["default"] = void 0;
+var _react = _interopRequireDefault(__webpack_require__(6689));
+var _head = _interopRequireDefault(__webpack_require__(4957));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+const statusCodes = {
+    400: "Bad Request",
+    404: "This page could not be found",
+    405: "Method Not Allowed",
+    500: "Internal Server Error"
+};
+function _getInitialProps({ res , err  }) {
+    const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+    return {
+        statusCode
+    };
+}
+class Error extends _react.default.Component {
+    render() {
+        const { statusCode  } = this.props;
+        const title = this.props.title || statusCodes[statusCode] || "An unexpected error has occurred";
+        return /*#__PURE__*/ _react.default.createElement("div", {
+            style: styles.error
+        },  true && /*#__PURE__*/ _react.default.createElement(_head.default, null, /*#__PURE__*/ _react.default.createElement("title", null, statusCode ? `${statusCode}: ${title}` : "Application error: a client-side exception has occurred")), /*#__PURE__*/ _react.default.createElement("div", null, /*#__PURE__*/ _react.default.createElement("style", {
+            dangerouslySetInnerHTML: {
+                __html: "body { margin: 0 }"
+            }
+        }), statusCode ? /*#__PURE__*/ _react.default.createElement("h1", {
+            style: styles.h1
+        }, statusCode) : null, /*#__PURE__*/ _react.default.createElement("div", {
+            style: styles.desc
+        }, /*#__PURE__*/ _react.default.createElement("h2", {
+            style: styles.h2
+        }, this.props.title || statusCode ? title : /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, "Application error: a client-side exception has occurred (see the browser console for more information)"), "."))));
+    }
+}
+exports["default"] = Error;
+Error.displayName = "ErrorPage";
+Error.getInitialProps = _getInitialProps;
+Error.origGetInitialProps = _getInitialProps;
+const styles = {
+    error: {
+        color: "#000",
+        background: "#fff",
+        fontFamily: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif',
+        height: "100vh",
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    desc: {
+        display: "inline-block",
+        textAlign: "left",
+        lineHeight: "49px",
+        height: "49px",
+        verticalAlign: "middle"
+    },
+    h1: {
+        display: "inline-block",
+        borderRight: "1px solid rgba(0, 0, 0,.3)",
+        margin: 0,
+        marginRight: "20px",
+        padding: "10px 23px 10px 0",
+        fontSize: "24px",
+        fontWeight: 500,
+        verticalAlign: "top"
+    },
+    h2: {
+        fontSize: "14px",
+        fontWeight: "normal",
+        lineHeight: "inherit",
+        margin: 0,
+        padding: 0
+    }
+}; //# sourceMappingURL=_error.js.map
+
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 4957:
 /***/ ((module) => {
 
-module.exports = require("react/jsx-dev-runtime");
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 6689:
+/***/ ((module) => {
+
+module.exports = require("react");
 
 /***/ })
 
@@ -40,7 +117,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./pages/_error.js"));
+var __webpack_exports__ = (__webpack_exec__(7345));
 module.exports = __webpack_exports__;
 
 })();
