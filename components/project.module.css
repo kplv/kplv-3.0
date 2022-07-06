@@ -1,14 +1,14 @@
 .project {
   height: auto;
   margin-bottom: 24px;
-  border-bottom: 2px var(--grey10) solid;
+  border-bottom: 1px var(--grey10) solid;
   transition: all 0.2s ease-out;
   padding-bottom: 32px;
 }
 
 .project:hover {
-  color: var(--grey40);
-  transition: all 0.2s ease-out;
+  /* color: var(--grey40); */
+  /* transition: all 0.2s ease-out; */
 }
 
 .project:hover {

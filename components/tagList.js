@@ -1,18 +1,17 @@
-import Tag from "./tag";
-import classes from "./tagList.module.css";
-import allTags from "../data/tags.json";
+import Tag from './tag';
+import classes from './tagList.module.css';
+import allTags from '../data/tags.json';
 
 function TagList(props) {
   const { projectTags } = props;
 
   console.log;
 
-    return (
+  return (
     <div className={classes.list}>
       {projectTags.map((projectTag) =>
         allTags.tags.map((tag) => {
           if (projectTag === tag.id) {
-            console.log(tag.id);
             return (
               <Tag
                 text={tag.text}

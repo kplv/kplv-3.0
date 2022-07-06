@@ -1,35 +1,57 @@
-import classes from "./project.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import TagList from "./tagList";
-import tags from "../data/tags.json";
+import classes from './project.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import TagList from './tagList';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+
+const variants = {
+  open: { opacity: 1, transition: { duration: 0.3, type: 'ease' } },
+  closed: {
+    opacity: 0,
+    y: 24,
+    transition: { duration: 0.3, type: 'ease' },
+  },
+};
 
 function Project(props) {
+  const [isHovered, setIsHovered] = useState(false);
   const { description, image, id, projectTags, name } = props;
   const link = `/${id}`;
 
   return (
-    <Link href={link}>
-      <div className={classes.project}>
-        <div className={classes.header}>
-          <h2 className={classes.projectName}>{name}</h2>
-          <TagList projectTags={projectTags} />
-        </div>
-
-        <div className={classes.body}>
-          <div className={classes.text}>
-            <p>{description}</p>
+    <motion.div
+      whileHover={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
+    >
+      <Link href={link}>
+        <div className={classes.project}>
+          <div className={classes.header}>
+            <h2 className={classes.projectName}>{name}</h2>
+            <TagList projectTags={projectTags} />
           </div>
-          <Image
-            src={image}
-            width="364px"
-            height="228px"
-            objectFit="contain"
-            quality="100"
-          ></Image>
+
+          <div className={classes.body}>
+            <div className={classes.text}>
+              <p>{description}</p>
+            </div>
+            <motion.div
+              variants={variants}
+              animate={isHovered ? 'open' : 'closed'}
+              initial={{ opacity: 0 }}
+            >
+              <Image
+                src={image}
+                width='364px'
+                height='228px'
+                objectFit='contain'
+                quality='100'
+              ></Image>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 }
 

@@ -5,6 +5,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import Project from '../components/project';
 import Head from 'next/head';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function ProjectPage(props) {
   const { blocks, projects } = props;
