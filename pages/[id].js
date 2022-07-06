@@ -10,6 +10,13 @@ function ProjectPage(props) {
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
   console.log(projectId);
+  console.log(projects)
+
+  let currentProject = projects.find(obj => {
+    return obj.id === projectId
+  })
+
+  
 
   function findNextProject() {
     if (projectId === 'arrival') {
@@ -60,12 +67,12 @@ function ProjectPage(props) {
         projectTags={projects[nextProjectNumber].projectTags}
       />
       <Head>
-        <title>Some project</title>
+        <title>{currentProject.name+' — Denis Kopylov'}</title>
         <meta
           name='description'
-          content='Denis Kopylov senior product designer'
+          content={currentProject.description}
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />``
       </Head>
     </Fragment>
   );
