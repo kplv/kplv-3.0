@@ -26,7 +26,7 @@
     {
       "id": "3",
       "content": [
-        { "type": "header", "data": "The challenge" },
+        { "type": "header", "data": "Consistency on all platforms" },
         {
           "type": "text",
           "data": "Voice assistants should behave alike across all devices you’re using. Scenarious and flows are designed for mobile apps, smart TVs, tablet apps, and most importantly — voice interaction in each of them."
@@ -35,6 +35,56 @@
           "type": "image",
           "src": "/projects/sber/sber-2.png",
           "caption": "Same search on TV and app"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
+        { "type": "header", "data": "Basics scenarious" },
+        {
+          "type": "text",
+          "data": "Obviously we didn't start with fancy apps. We had to find a need of discovery and navigation scenarious. So we started with MVP version. Also we developed & updated few times a traffic jams widget. Which happened to be one of the most used widgets with a DAU of a few thousand people."
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-3.png",
+          "caption": "Early MVP of a search app"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-4.png",
+          "caption": "Traffic widget with directions"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "content": [
+        { "type": "header", "data": "Tech restricions" },
+        {
+          "type": "text",
+          "data": "However, our apps might have looked native, but we're actually built upon React canvas. And often times our devices didn't have powerful hardware. For example, TVs often times come with just enough resources to render a not so complicated web-page. So often times we had to cut fancy animations in order to deliver an app to user."
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-6.mp4",
+          "caption": "Voice interactions example"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "content": [
+        { "type": "header", "data": "Results" },
+        {
+          "type": "text",
+          "data": "We started from MVP apps and were able to upgrade them to whole big products. With bookings, voice controls, editor’s choice places, and some more. For me, it was my first experience in launching a new product to the market, while also trying to understand how to design voice scenarious."
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-5.png",
+          "caption": "Voice interactions example"
         }
       ]
     }

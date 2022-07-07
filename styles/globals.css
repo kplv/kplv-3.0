@@ -93,4 +93,7 @@ section {
   section {
     padding-bottom: 64px;
   }
+  .sectionHeader {
+    padding-bottom: 8px;
+  }
 }

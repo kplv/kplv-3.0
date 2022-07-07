@@ -28,12 +28,12 @@ function Project(props) {
         <div className={classes.project}>
           <div className={classes.header}>
             <h2 className={classes.projectName}>{name}</h2>
-            <TagList projectTags={projectTags} />
           </div>
 
           <div className={classes.body}>
-            <div className={classes.text}>
-              <p>{description}</p>
+            <div className={classes.description}>
+              <TagList projectTags={projectTags} />
+              <h2 className={classes.projectText}>{description}</h2>
             </div>
             <motion.div
               variants={variants}
