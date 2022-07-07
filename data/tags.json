@@ -5,7 +5,8 @@
       "id": "e-vehicles",
       "textColor": "#A273FE",
       "backColor": "rgba(162, 115, 254, 0.1)",
-      "isIcon": true
+      "isIcon": true,
+      "path": "/icons/e-vehicles.svg"
     },
     {
       "text": "startup",
@@ -20,28 +21,32 @@
       "backColor": "rgba(28, 65, 250, 0.1)"
     },
     {
-      "text": "urban",
-      "id": "urban",
-      "textColor": "rgba(126, 57, 255, 1)",
-      "backColor": "rgba(126, 57, 255, 0.1)"
+      "text": "city discovery",
+      "id": "city discovery",
+      "textColor": "#A273FE",
+      "backColor": "rgba(162, 115, 254, 0.1)",
+      "isIcon": true,
+      "path": "/icons/discovery.svg"
     },
     {
       "text": "zero to one",
       "id": "zero to one",
-      "textColor": "rgba(255, 107, 57, 1)",
-      "backColor": "rgba(255, 107, 57, 0.1)"
+      "textColor": "#FE73CB",
+      "backColor": "rgba(254, 115, 203, 0.1)"
     },
     {
       "text": "b2c",
       "id": "b2c",
-      "textColor": "rgba(18, 224, 76, 1)",
-      "backColor": "rgba(18, 224, 76, 0.1)"
+      "textColor": "rgba(255, 57, 94, 1)",
+      "backColor": "rgba(255, 57, 94, 0.1)"
     },
     {
       "text": "locals",
       "id": "locals",
-      "textColor": "rgba(57, 86, 255, 1)",
-      "backColor": "rgba(57, 86, 255, 0.1)"
+      "textColor": "#A273FE",
+      "backColor": "rgba(162, 115, 254, 0.1)",
+      "isIcon": true,
+      "path": "/icons/award.svg"
     },
     {
       "text": "award concepts",

@@ -3,22 +3,22 @@
     {
       "id": "arrival",
       "name": "Arrival",
-      "description": "Leading a full cycle of product design of a service to help customers get what they want",
-      "image": "/arrival.png",
+      "description": "Leading full cycle of product design for a customer help service",
+      "image": "/projects/arrival/arrival-0.png",
       "projectTags": ["e-vehicles", "startup", "b2b"]
     },
     {
       "id": "sber",
       "name": "SberDevices",
-      "description": "Making a service for city activities, restaraunts, and places. All of this with smart voice assistants",
-      "image": "/sber.png",
-      "projectTags": ["urban", "zero to one", "b2c"]
+      "description": "Launching a product for city activities and places. Find anything with a help of smart voice assistants",
+      "image": "/projects/sber/sber-1.png",
+      "projectTags": ["city discovery", "zero to one", "b2c"]
     },
     {
       "id": "other",
       "name": "Yandex, Badoo, and more…",
-      "description": "Services and apps, ranging from small local products to large tech companies",
-      "image": "/other.png",
+      "description": "Apps for local stores and huge tech companies",
+      "image": "/projects/other/badoo-0.png",
       "projectTags": ["locals", "award"]
     }
   ],

@@ -5,22 +5,61 @@
       "content": [
         {
           "type": "text",
-          "data": "Design from 0 to 1 a service for finding urban leisures, restaraunts, and places. All of this with smart voice assistants."
+          "data": "Projects from the past few years. Some of them are done inside product teams of huge tech companies, like Yandex. Some are helping to flourish local businesses, like Maestrello (delicious pizza btw). Some are done as briefs from international companies, like Badoo."
         }
       ]
     },
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "Initial problem" },
+        { "type": "header", "data": "Maestrello relauch" },
         {
           "type": "text",
-          "data": "Nullam ut ultricies ex. Pellentesque ut finibus mauris, in porta orci. Etiam maximus leo eu ligula feugiat egestas. Nam consequat vitae erat a suscipit. Sed ultrices auctor iaculis."
+          "data": "Together with Madebymad team I helped local pizza place to grow online deliviries of pizza. Started from concept and business needs and them moved on. I joined the team at a stage, when we were to put concept into real user scenarios. We ended with full UI Kit for both web and mobile sites, and supported the team along development."
+        },
+        {
+          "type": "video",
+          "src": "/projects/other/maestrello-1.mp4"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": [
+        { "type": "header", "data": "Badoo voice dating" },
+        {
+          "type": "text",
+          "data": "One of final tasks at BHSAD course on product design is a brief from real company. For my team it's to rethink the way people meet each other on dating apps. We spent tremendous time in researching and talking to users, and after some time ended up in voice dating concept."
+        },
+        {
+          "type": "video",
+          "src": "/projects/other/badoo-1.m4v"
+        },
+        {
+          "type": "video",
+          "src": "/projects/other/badoo-2.m4v"
         },
         {
           "type": "image",
-          "src": "/arrival.png",
-          "caption": "First Iteration"
+          "src": "/projects/other/badoo-3.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
+        { "type": "header", "data": "Yandex.Telephony" },
+        {
+          "type": "text",
+          "data": "Service for call management. It connects small and medium businesses with their customers. Also, it provides them with smart analytics, dashboards, and other utilities for calls. I was leading all design for app and web-version."
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/yandex-1.png"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/yandex-2.png"
         }
       ]
     }

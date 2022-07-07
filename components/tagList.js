@@ -17,6 +17,7 @@ function TagList(props) {
                 text={tag.text}
                 backColor={tag.backColor}
                 textColor={tag.textColor}
+                path={tag.path}
                 isIcon={tag.isIcon}
               />
             );

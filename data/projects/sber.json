@@ -67,9 +67,14 @@
           "data": "However, our apps might have looked native, but we're actually built upon React canvas. And often times our devices didn't have powerful hardware. For example, TVs often times come with just enough resources to render a not so complicated web-page. So often times we had to cut fancy animations in order to deliver an app to user."
         },
         {
-          "type": "image",
+          "type": "video",
           "src": "/projects/sber/sber-6.mp4",
-          "caption": "Voice interactions example"
+          "caption": "We had to cut this animation"
+        },
+        {
+          "type": "video",
+          "src": "/projects/sber/sber-7.mp4",
+          "caption": "and this too…"
         }
       ]
     },

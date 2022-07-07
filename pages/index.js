@@ -5,6 +5,7 @@ import HelloText from '../components/hello-text';
 import ProjectList from '../components/projectsList';
 import { Fragment } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ProjectVideo from '../components/projectVideo';
 
 export default function Home(props) {
   const { projects } = props;

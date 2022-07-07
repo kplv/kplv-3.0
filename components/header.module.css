@@ -7,7 +7,7 @@
   top: 0;
   width: 100%;
   background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 59.92%, rgba(255, 255, 255, 0) 100%);
-  z-index: 2;
+  z-index: 100;
   margin-bottom: 100px;
 }
 

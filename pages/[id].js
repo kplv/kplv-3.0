@@ -6,6 +6,7 @@ import path from 'path';
 import Project from '../components/project';
 import Head from 'next/head';
 import { motion, AnimatePresence } from 'framer-motion';
+import ProjectVideo from '../components/projectVideo';
 
 function ProjectPage(props) {
   const { blocks, projects } = props;
@@ -48,6 +49,15 @@ function ProjectPage(props) {
               if (contentItem.type === 'image') {
                 return (
                   <ProjectImage
+                    src={contentItem.src}
+                    caption={contentItem.caption}
+                  />
+                );
+              }
+
+              if (contentItem.type === 'video') {
+                return (
+                  <ProjectVideo
                     src={contentItem.src}
                     caption={contentItem.caption}
                   />
