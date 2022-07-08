@@ -4,15 +4,24 @@ import Link from 'next/link';
 import TagList from './tagList';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { isMobile } from 'react-device-detect';
 
-const variants = {
-  open: { opacity: 1, transition: { duration: 0.3, type: 'ease' } },
-  closed: {
-    opacity: 0,
-    y: 24,
-    transition: { duration: 0.3, type: 'ease' },
-  },
-};
+let variants = {};
+let intialOpacity
+
+if (!isMobile) {
+  intialOpacity = 0;
+  variants = {
+    open: { opacity: 1, transition: { duration: 0.3, type: 'ease' } },
+    closed: {
+      opacity: 0,
+      y: 24,
+      transition: { duration: 0.3, type: 'ease' },
+    },
+  };
+} else {
+  intialOpacity = 1;
+}
 
 function Project(props) {
   const [isHovered, setIsHovered] = useState(false);
@@ -38,7 +47,7 @@ function Project(props) {
             <motion.div
               variants={variants}
               animate={isHovered ? 'open' : 'closed'}
-              initial={{ opacity: 0 }}
+              initial={{ opacity: { intialOpacity } }}
             >
               <Image
                 src={image}

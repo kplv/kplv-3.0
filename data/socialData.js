@@ -1,9 +1,9 @@
 const socialData = [
   {
-    id: 'mail',
-    text: 'Write me a Mail',
-    link: 'mailto:denis@kplv.ru',
-    src: '/social/mail.svg',
+    id: 'arena',
+    text: 'Arena',
+    link: 'http://are.na/denis-kopylov',
+    src: '/social/arena.svg',
   },
   {
     id: 'telegram',
