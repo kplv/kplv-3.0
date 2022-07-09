@@ -3,3 +3,9 @@
     margin-top: 200px;
     margin-bottom: 100px;
 }
+
+@media screen and (max-width: 428px) {
+    .text {
+        margin-top: 64px;
+      }
+    }

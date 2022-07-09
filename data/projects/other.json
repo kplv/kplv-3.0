@@ -5,17 +5,17 @@
       "content": [
         {
           "type": "text",
-          "data": "Projects from the past few years. Some of them are done inside product teams of huge tech companies, like Yandex. Some are helping to flourish local businesses, like Maestrello (delicious pizza btw). Some are done as briefs from international companies, like Badoo."
+          "data": "Projects of past few years. Some of them are done inside product teams of huge tech companies, like Yandex. Some are helping to flourish local businesses, like Maestrello (delicious pizza btw). Some are done as briefs from international companies, like Badoo."
         }
       ]
     },
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "Maestrello relauch" },
+        { "type": "header", "data": "Maestrello" },
         {
           "type": "text",
-          "data": "Together with Madebymad team I helped local pizza place to grow online deliviries of pizza. Started from concept and business needs and them moved on. I joined the team at a stage, when we were to put concept into real user scenarios. We ended with full UI Kit for both web and mobile sites, and supported the team along development."
+          "data": "Together with Madebymad team I helped local pizza place to grow online deliviries of pizza. I joined the team at a stage, when we were to put concept into real user scenarios. We ended with full UI Kit for both web and mobile sites, and supported the team along the development. Here's a swift animation I prepared to showcase the project."
         },
         {
           "type": "video",
@@ -26,10 +26,38 @@
     {
       "id": "3",
       "content": [
+        { "type": "header", "data": "One & Double" },
+        {
+          "type": "text",
+          "data": "Another project with Madebymad. We lauched an app for local coffee shops with fixed prices. I was responsible for the whole flow map, creating UI kit, supporting iOS and Androud developers, and tickling edge cases."
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/coffee-1.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": [
+        { "type": "header", "data": "Yandex.Telephony" },
+        {
+          "type": "text",
+          "data": "Service for call management. It connects small and medium businesses with their customers. Also, it provides them with smart analytics, dashboards, and other utilities for calls. I was leading all design for app and web-version."
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/yandex-1.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
         { "type": "header", "data": "Badoo voice dating" },
         {
           "type": "text",
-          "data": "One of final tasks at BHSAD course on product design is a brief from real company. For my team it's to rethink the way people meet each other on dating apps. We spent tremendous time in researching and talking to users, and after some time ended up in voice dating concept."
+          "data": "One of final tasks at BHSAD course on product design is a brief from real company. For my team it was to rethink the way people meet each other on dating apps. We spent tremendous time in research and user interviews. After some time we ended up in voice dating concept. The project made it to U Awards short list."
         },
         {
           "type": "video",
@@ -46,20 +74,20 @@
       ]
     },
     {
-      "id": "4",
+      "id": "6",
       "content": [
-        { "type": "header", "data": "Yandex.Telephony" },
+        { "type": "header", "data": "Plant It" },
         {
           "type": "text",
-          "data": "Service for call management. It connects small and medium businesses with their customers. Also, it provides them with smart analytics, dashboards, and other utilities for calls. I was leading all design for app and web-version."
+          "data": "One of self-initiated projects on BHSAD course on product design. Plant It helps with growing food and vegetables at home. I completed full cycle of product design from market-fit and research to final designs and presentation."
         },
         {
           "type": "image",
-          "src": "/projects/other/yandex-1.png"
+          "src": "/projects/other/plant-1.png"
         },
         {
           "type": "image",
-          "src": "/projects/other/yandex-2.png"
+          "src": "/projects/other/plant-2.png"
         }
       ]
     }

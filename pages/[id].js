@@ -82,8 +82,15 @@ function ProjectPage(props) {
         <Head>
           <title>{currentProject.name + ' — Denis Kopylov'}</title>
           <meta name='description' content={currentProject.description} />
+          <meta property='og:title' content='Denis Kopylov' />
+          <meta property='og:type' content='article' />
+          <meta property='og:image' content='/thumb.png' />
+          <meta
+            property='og:description'
+            content='Denis Kopylov — senior product designer at Arrival'
+          />
           <link rel='icon' href='/favicon.ico' />
-          ``
+          
         </Head>
       </motion.div>
     </AnimatePresence>

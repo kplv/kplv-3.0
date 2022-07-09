@@ -12,5 +12,5 @@
 }
 
 @media screen and (max-width: 640px) {
-  .footer {flex-direction: column; gap: 8px}
+  .footer {flex-direction: column; gap: 8px; padding-top: 0;}
 }

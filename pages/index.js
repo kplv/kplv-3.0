@@ -14,14 +14,21 @@ export default function Home(props) {
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1,}}
-        exit={{ opacity: 0,}}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
       >
         <Head>
           <title>Denis Kopylov</title>
           <meta
             name='description'
-            content='Denis Kopylov senior product designer'
+            content='Denis Kopylov — senior product designer'
+          />
+          <meta property='og:title' content='Denis Kopylov' />
+          <meta property='og:type' content='article' />
+          <meta property='og:image' content='/thumb.png' />
+          <meta
+            property='og:description'
+            content='Denis Kopylov — senior product designer at Arrival'
           />
           <link rel='icon' href='/favicon.ico' />
         </Head>

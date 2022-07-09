@@ -64,7 +64,7 @@
         { "type": "header", "data": "Tech restricions" },
         {
           "type": "text",
-          "data": "However, our apps might have looked native, but we're actually built upon React canvas. And often times our devices didn't have powerful hardware. For example, TVs often times come with just enough resources to render a not so complicated web-page. So often times we had to cut fancy animations in order to deliver an app to user."
+          "data": "Our apps might have looked native, but they were  built upon React canvases actually. And often times our devices didn't have powerful hardware. For example, TVs often times come with just enough resources to render a not so complicated web-page. Often times we had to cut fancy animations in order to deliver an app to user."
         },
         {
           "type": "video",

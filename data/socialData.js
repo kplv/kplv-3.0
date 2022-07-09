@@ -1,15 +1,15 @@
 const socialData = [
   {
-    id: 'arena',
-    text: 'Arena',
-    link: 'http://are.na/denis-kopylov',
-    src: '/social/arena.svg',
+    id: 'mail',
+    text: 'Send a mail',
+    link: 'mailto:denis@kplv.ru?subject=Product Designer',
+    src: '/social/mail.svg',
   },
   {
-    id: 'telegram',
-    text: 'Telegram',
-    link: 'https://t.me/deniskplv',
-    src: '/social/telegram.svg',
+    id: 'arena',
+    text: 'Are.na',
+    link: 'http://are.na/denis-kopylov',
+    src: '/social/arena.svg',
   },
   {
     id: 'dribbble',
@@ -22,7 +22,13 @@ const socialData = [
     text: 'Linked In',
     link: 'https://www.linkedin.com/in/denis-kopylov-782510167/',
     src: '/social/linkedin.svg',
-  }
+  },
+  {
+    id: 'telegram',
+    text: 'Telegram',
+    link: 'https://t.me/deniskplv',
+    src: '/social/telegram.svg',
+  },
 ];
 
 export default socialData;

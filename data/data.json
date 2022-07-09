@@ -11,14 +11,14 @@
     {
       "id": "sber",
       "name": "SberDevices",
-      "description": "Launching a product for city activities and places. Find anything with a help of smart voice assistants",
+      "description": "Launching a product for city activities and places with smart voice assistants",
       "image": "/projects/sber/sber-1.png",
       "projectTags": ["city discovery", "zero to one", "b2c"]
     },
     {
       "id": "other",
       "name": "Yandex, Badoo, and more…",
-      "description": "Apps for local stores and huge tech companies",
+      "description": "Making apps for local stores and international tech companies",
       "image": "/projects/other/badoo-0.png",
       "projectTags": ["award", "local"]
     }

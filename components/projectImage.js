@@ -15,6 +15,7 @@ function ProjectImage(props) {
         height='474px'
         className={classes.image}
         objectFit="cover"
+      
       />
     </div>
   );

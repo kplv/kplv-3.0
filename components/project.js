@@ -66,6 +66,8 @@ function Project(props) {
                 height='228px'
                 objectFit='contain'
                 quality='100'
+                priority
+                eager
               ></Image>
             </motion.div>
           </div>
