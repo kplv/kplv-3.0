@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 
 let variants = {};
-let intialOpacity
+let intialOpacity;
 
 if (!isMobile) {
   intialOpacity = 0;
@@ -25,16 +25,27 @@ if (!isMobile) {
 
 function Project(props) {
   const [isHovered, setIsHovered] = useState(false);
-  const { description, image, id, projectTags, name } = props;
-  const link = `/${id}`;
+  const { description, image, id, projectTags, name, nda } = props;
+  let link;
+  let projectClass;
+  let scrollAfterClick;
+
+  if (!nda) {
+    link = `/${id}`;
+    projectClass = '';
+  } else {
+    link = '';
+    projectClass = classes.locked;
+    scrollAfterClick = false;
+  }
 
   return (
     <motion.div
       whileHover={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
-      <Link href={link}>
-        <div className={classes.project}>
+      <Link href={link} scroll={scrollAfterClick}>
+        <div className={classes.project + ' ' + projectClass}>
           <div className={classes.header}>
             <h2 className={classes.projectName}>{name}</h2>
           </div>

@@ -1,6 +1,14 @@
 {
   "tags": [
     {
+      "text": "nda",
+      "id": "nda",
+      "textColor": "#192124",
+      "backColor": "rgba(25, 33, 36, 0.05)",
+      "isIcon": true,
+      "path": "/icons/nda.svg"
+    },
+    {
       "text": "e-vehicles",
       "id": "e-vehicles",
       "textColor": "#A273FE",
@@ -41,18 +49,18 @@
       "backColor": "rgba(255, 57, 94, 0.1)"
     },
     {
-      "text": "locals",
-      "id": "locals",
+      "text": "local",
+      "id": "local",
       "textColor": "#A273FE",
-      "backColor": "rgba(162, 115, 254, 0.1)",
-      "isIcon": true,
-      "path": "/icons/award.svg"
+      "backColor": "rgba(162, 115, 254, 0.1)"
     },
     {
       "text": "award concepts",
       "id": "award",
       "textColor": "rgba(255, 57, 94, 1)",
-      "backColor": "rgba(255, 57, 94, 0.1)"
+      "backColor": "rgba(255, 57, 94, 0.1)",
+      "isIcon": true,
+      "path": "/icons/award.svg"
     }
   ]
 }

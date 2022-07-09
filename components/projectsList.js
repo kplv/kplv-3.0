@@ -11,6 +11,7 @@ function ProjectsList(props) {
       image={item.image}
       id={item.id}
       projectTags={item.projectTags}
+      nda={item.nda}
     />
   ));
 

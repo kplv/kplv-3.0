@@ -5,7 +5,8 @@
       "name": "Arrival",
       "description": "Leading full cycle of product design for a customer help service",
       "image": "/projects/arrival/arrival-0.png",
-      "projectTags": ["e-vehicles", "startup", "b2b"]
+      "projectTags": ["nda", "startup", "b2b"],
+      "nda": false
     },
     {
       "id": "sber",
@@ -19,7 +20,7 @@
       "name": "Yandex, Badoo, and more…",
       "description": "Apps for local stores and huge tech companies",
       "image": "/projects/other/badoo-0.png",
-      "projectTags": ["locals", "award"]
+      "projectTags": ["award", "local"]
     }
   ],
   "tags": [

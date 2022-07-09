@@ -1,5 +1,5 @@
 .project {
-  height: 100%;
+  
   margin-bottom: 24px;
   /* border-bottom: 1px var(--grey10) solid; */
   transition: all 0.2s ease-out;
@@ -47,7 +47,7 @@
   opacity: 0.4;
 }
 .description {
-  height: 100%;
+  
   padding-bottom: 64px;
   display: flex;
   flex-direction: column-reverse;
@@ -59,9 +59,17 @@
   padding-right: 64px;
 }
 
+.locked {
+  cursor: not-allowed;
+}
+
+.locked:hover {
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 428px) {
   .header {
-    height: auto;
+    
     padding-bottom: 0;
   }
   .body {
