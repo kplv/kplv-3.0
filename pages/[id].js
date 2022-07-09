@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import { Fragment } from 'react';
 import ProjectImage from '../components/projectImage';
 import fs from 'fs/promises';
 import path from 'path';
@@ -11,14 +10,11 @@ import ProjectVideo from '../components/projectVideo';
 function ProjectPage(props) {
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
-  console.log(projectId);
-  console.log(projects)
+  const router = useRouter();
 
-  let currentProject = projects.find(obj => {
-    return obj.id === projectId
-  })
-
-  
+  let currentProject = projects.find((obj) => {
+    return obj.id === projectId;
+  });
 
   function findNextProject() {
     if (projectId === 'arrival') {
@@ -33,59 +29,64 @@ function ProjectPage(props) {
   const nextProjectNumber = findNextProject();
 
   return (
-    <Fragment>
-      {blocks.map((block) => {
-        return (
-          <section key={block.id}>
-            {block.content.map((contentItem) => {
-              if (contentItem.type === 'text') {
-                return <p>{contentItem.data}</p>;
-              }
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1,}}
+        exit={{ opacity: 0  }}
+        
+      >
+        {blocks.map((block) => {
+          return (
+            <section key={block.id}>
+              {block.content.map((contentItem) => {
+                if (contentItem.type === 'text') {
+                  return <p>{contentItem.data}</p>;
+                }
 
-              if (contentItem.type === 'header') {
-                return <h2 className='sectionHeader'>{contentItem.data}</h2>;
-              }
+                if (contentItem.type === 'header') {
+                  return <h2 className='sectionHeader'>{contentItem.data}</h2>;
+                }
 
-              if (contentItem.type === 'image') {
-                return (
-                  <ProjectImage
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                  />
-                );
-              }
+                if (contentItem.type === 'image') {
+                  return (
+                    <ProjectImage
+                      src={contentItem.src}
+                      caption={contentItem.caption}
+                    />
+                  );
+                }
 
-              if (contentItem.type === 'video') {
-                return (
-                  <ProjectVideo
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                  />
-                );
-              }
-            })}
-          </section>
-        );
-      })}
-      <h2 className='sectionHeader'>Next project</h2>
+                if (contentItem.type === 'video') {
+                  return (
+                    <ProjectVideo
+                      src={contentItem.src}
+                      caption={contentItem.caption}
+                    />
+                  );
+                }
+              })}
+            </section>
+          );
+        })}
+        <h2 className='sectionHeader'>Next project</h2>
 
-      <Project
-        name={projects[nextProjectNumber].name}
-        description={projects[nextProjectNumber].description}
-        key={projects[nextProjectNumber].id}
-        image={projects[nextProjectNumber].image}
-        id={projects[nextProjectNumber].id}
-        projectTags={projects[nextProjectNumber].projectTags}
-      />
-      <Head>
-        <title>{currentProject.name+' — Denis Kopylov'}</title>
-        <meta
-          name='description'
-          content={currentProject.description}
+        <Project
+          name={projects[nextProjectNumber].name}
+          description={projects[nextProjectNumber].description}
+          key={projects[nextProjectNumber].id}
+          image={projects[nextProjectNumber].image}
+          id={projects[nextProjectNumber].id}
+          projectTags={projects[nextProjectNumber].projectTags}
         />
-        <link rel='icon' href='/favicon.ico' />``
-      </Head>
-    </Fragment>
+        <Head>
+          <title>{currentProject.name + ' — Denis Kopylov'}</title>
+          <meta name='description' content={currentProject.description} />
+          <link rel='icon' href='/favicon.ico' />
+          ``
+        </Head>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 

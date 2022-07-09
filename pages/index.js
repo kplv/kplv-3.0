@@ -11,23 +11,28 @@ export default function Home(props) {
   const { projects } = props;
 
   return (
-    <Fragment
-    >
-      <Head>
-        <title>Denis Kopylov</title>
-        <meta
-          name='description'
-          content='Denis Kopylov senior product designer'
-        />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <div>
-        <main>
-          <HelloText />
-          <ProjectList items={projects} />
-        </main>
-      </div>
-    </Fragment>
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1,}}
+        exit={{ opacity: 0,}}
+      >
+        <Head>
+          <title>Denis Kopylov</title>
+          <meta
+            name='description'
+            content='Denis Kopylov senior product designer'
+          />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
+        <div>
+          <main>
+            <HelloText />
+            <ProjectList items={projects} />
+          </main>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
