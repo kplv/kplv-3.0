@@ -26,25 +26,53 @@ if (!isMobile) {
 function Project(props) {
   const [isHovered, setIsHovered] = useState(false);
   const { description, image, id, projectTags, name, nda } = props;
-  let link;
   let projectClass;
-  let scrollAfterClick;
+  let link = `/${id}`;
 
   if (!nda) {
-    link = `/${id}`;
-    projectClass = '';
-  } else {
-    link = '#';
-    projectClass = classes.locked;
-  }
+    return (
+      <motion.div
+        whileHover={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+      >
+        <Link href={link}>
+          <div className={classes.project + ' ' + projectClass}>
+            <div className={classes.header}>
+              <h2 className={classes.projectName}>{name}</h2>
+            </div>
 
-  return (
-    <motion.div
-      whileHover={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
-    >
-      <Link href={link} >
-        <div className={classes.project + ' ' + projectClass}>
+            <div className={classes.body}>
+              <div className={classes.description}>
+                <TagList projectTags={projectTags} />
+                <h2 className={classes.projectText}>{description}</h2>
+              </div>
+              <motion.div
+                variants={variants}
+                animate={isHovered ? 'open' : 'closed'}
+                initial={{ opacity: { intialOpacity } }}
+              >
+                <Image
+                  src={image}
+                  width='364px'
+                  height='228px'
+                  objectFit='contain'
+                  quality='100'
+                  priority
+                  eager
+                ></Image>
+              </motion.div>
+            </div>
+          </div>
+        </Link>
+      </motion.div>
+    );
+  } else {
+    return (
+      <motion.div
+        whileHover={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+      >
+        <div className={classes.project + ' ' + classes.locked}>
           <div className={classes.header}>
             <h2 className={classes.projectName}>{name}</h2>
           </div>
@@ -71,9 +99,9 @@ function Project(props) {
             </motion.div>
           </div>
         </div>
-      </Link>
-    </motion.div>
-  );
+      </motion.div>
+    );
+  }
 }
 
 export default Project;
