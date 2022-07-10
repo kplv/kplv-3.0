@@ -34,7 +34,7 @@ function Project(props) {
     link = `/${id}`;
     projectClass = '';
   } else {
-    link = [];
+    link = '';
     projectClass = classes.locked;
     scrollAfterClick = false;
   }

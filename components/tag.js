@@ -11,7 +11,7 @@ function Tag(props) {
         className={classes.tag}
         style={{ backgroundColor: backColor, color: textColor }}
       >
-        <Image src={path} width='16px' height='16px' />
+        <Image src={path} width='16px' height='16px' priority/>
 
         {text}
       </span>
