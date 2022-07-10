@@ -8,6 +8,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProjectVideo from '../components/projectVideo';
 
 function ProjectPage(props) {
+
+
+
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
   const router = useRouter();

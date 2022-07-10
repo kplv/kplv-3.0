@@ -31,6 +31,7 @@ export default function Home(props) {
             content='Denis Kopylov — senior product designer at Arrival'
           />
           <link rel='icon' href='/favicon.ico' />
+
         </Head>
         <div>
           <main>
