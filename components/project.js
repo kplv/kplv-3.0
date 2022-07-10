@@ -36,7 +36,6 @@ function Project(props) {
   } else {
     link = '';
     projectClass = classes.locked;
-    scrollAfterClick = false;
   }
 
   return (
@@ -44,7 +43,7 @@ function Project(props) {
       whileHover={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
-      <Link href={link} scroll={scrollAfterClick}>
+      <Link href={link}>
         <div className={classes.project + ' ' + projectClass}>
           <div className={classes.header}>
             <h2 className={classes.projectName}>{name}</h2>
