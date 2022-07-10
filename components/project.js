@@ -34,7 +34,7 @@ function Project(props) {
     link = `/${id}`;
     projectClass = '';
   } else {
-    link = '';
+    link = '#';
     projectClass = classes.locked;
   }
 
@@ -43,7 +43,7 @@ function Project(props) {
       whileHover={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
     >
-      <Link href={link}>
+      <Link href={link} >
         <div className={classes.project + ' ' + projectClass}>
           <div className={classes.header}>
             <h2 className={classes.projectName}>{name}</h2>
