@@ -25,14 +25,14 @@ function ProjectPage(props) {
     } else if (projectId === 'sber') {
       return 2;
     } else {
-      return 0;
+      return 1;
     }
   }
 
   const nextProjectNumber = findNextProject();
 
   return (
-    <AnimatePresence>
+    
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1,}}
@@ -81,6 +81,7 @@ function ProjectPage(props) {
           image={projects[nextProjectNumber].image}
           id={projects[nextProjectNumber].id}
           projectTags={projects[nextProjectNumber].projectTags}
+          nda = {projects[nextProjectNumber].nda}
         />
         <Head>
           <title>{currentProject.name + ' — Denis Kopylov'}</title>
@@ -96,7 +97,7 @@ function ProjectPage(props) {
           
         </Head>
       </motion.div>
-    </AnimatePresence>
+    
   );
 }
 
