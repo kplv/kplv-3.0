@@ -12,14 +12,24 @@
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "NDA project" },
+        { "type": "header", "data": "My role" },
         {
           "type": "text",
-          "data": "Unfortunately, the project is under NDA now, so I can't show much. But I'm eager to show more soon."
+          "data": "I joined the team as a Lead Designer at the end of 2021. Since when I'm responsible for all customer support interactions. I formulate user scenarios, conduct UX researches, negotiate with core stakeholders, and support devs with implementation."
         },
         {
           "type": "image",
           "src": "/projects/arrival/arrival-3.png"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": [
+        { "type": "header", "data": "NDA project" },
+        {
+          "type": "text",
+          "data": "Unfortunately, the project is under NDA now, so I can't show much. But I'm eager to show more soon."
         }
       ]
     }
