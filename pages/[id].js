@@ -25,7 +25,7 @@ function ProjectPage(props) {
     } else if (projectId === 'sber') {
       return 2;
     } else {
-      return 1;
+      return 0;
     }
   }
 

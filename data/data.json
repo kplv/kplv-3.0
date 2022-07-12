@@ -5,8 +5,7 @@
       "name": "Arrival",
       "description": "Leading full cycle of product design for a customer help service",
       "image": "/projects/arrival/arrival-0.png",
-      "projectTags": ["nda", "startup", "b2b"],
-      "nda": true
+      "projectTags": ["nda", "startup", "b2b"]
     },
     {
       "id": "sber",
