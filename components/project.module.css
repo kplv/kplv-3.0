@@ -21,7 +21,7 @@
 
 .projectText {
   font-size: 36px;
-  opacity: 0.5;
+  color: var(--grey40);
 }
 
 .body {

@@ -540,7 +540,7 @@ module.exports = import("framer-motion");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"about":"Senior product designer at Arrival. I create innovative experiences & mentor junior designers.","bottom":"Made with help of Next.js, PolySans, and VS Code"}');
+module.exports = JSON.parse('{"about":"Senior product designer at Arrival. I create innovative experiences & mentor junior designers","bottom":"Made with help of Next.js, PolySans, and VS Code"}');
 
 /***/ })
 

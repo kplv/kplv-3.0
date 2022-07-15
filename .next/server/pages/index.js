@@ -594,7 +594,7 @@ module.exports = JSON.parse('{"tags":[{"text":"nda","id":"nda","textColor":"#192
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"about":"Senior product designer at Arrival. I create innovative experiences & mentor junior designers.","bottom":"Made with help of Next.js, PolySans, and VS Code"}');
+module.exports = JSON.parse('{"about":"Senior product designer at Arrival. I create innovative experiences & mentor junior designers","bottom":"Made with help of Next.js, PolySans, and VS Code"}');
 
 /***/ })
 

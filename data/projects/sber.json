@@ -5,7 +5,7 @@
       "content": [
         {
           "type": "text",
-          "data": "Devices is a startup-like project inside of a largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
+          "data": "Devices is a startup-like project inside the largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
         }
       ]
     },
@@ -15,7 +15,7 @@
         { "type": "header", "data": "My role" },
         {
           "type": "text",
-          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for users weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs."
+          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs."
         },
         {
           "type": "image",
@@ -29,7 +29,7 @@
         { "type": "header", "data": "Consistency on all platforms" },
         {
           "type": "text",
-          "data": "Voice assistants should behave alike across all devices you’re using. Scenarious and flows are designed for mobile apps, smart TVs, tablet apps, and most importantly — voice interaction in each of them."
+          "data": "Voice assistants should behave alike across all devices you’re using. Scenarios and flows are designed for mobile apps, smart TVs, tablet apps, and most importantly — voice interactions in each of them."
         },
         {
           "type": "image",
@@ -41,10 +41,10 @@
     {
       "id": "4",
       "content": [
-        { "type": "header", "data": "Basics scenarious" },
+        { "type": "header", "data": "Basic scenarios" },
         {
           "type": "text",
-          "data": "Obviously we didn't start with fancy apps. We had to find a need of discovery and navigation scenarious. So we started with MVP version. Also we developed & updated few times a traffic jams widget. Which happened to be one of the most used widgets with a DAU of a few thousand people."
+          "data": "Obviously, we didn't start with fancy apps. We had to find a need of discovery and navigation scenarios. So we started with MVP version. Also, we developed & updated traffic jams widget few times. Which happened to be one of the most used widgets with a DAU of few thousand people."
         },
         {
           "type": "image",
@@ -64,7 +64,7 @@
         { "type": "header", "data": "Tech restricions" },
         {
           "type": "text",
-          "data": "Our apps might have looked native, but they were  built upon React canvases actually. And often times our devices didn't have powerful hardware. For example, TVs often times come with just enough resources to render a not so complicated web-page. Often times we had to cut fancy animations in order to deliver an app to user."
+          "data": "Our apps might have looked native, but were built with React canvases. Often times devices didn't have powerful hardware. For example, TVs came with just enough resources to render a not so complicated web-page. Once in a while we had to cut fancy animations in order to deliver an app."
         },
         {
           "type": "video",
@@ -84,7 +84,7 @@
         { "type": "header", "data": "Results" },
         {
           "type": "text",
-          "data": "We started from MVP apps and were able to upgrade them to whole big products. With bookings, voice controls, editor’s choice places, and some more. For me, it was my first experience in launching a new product to the market, while also trying to understand how to design voice scenarious."
+          "data": "We started with MVP apps and upgraded them to great big products. With bookings, voice controls, editor’s choice places, and some more. For me, it was my first experience launching a new product to the market, while also trying to understand how to design voice scenarios."
         },
         {
           "type": "image",

@@ -72,7 +72,7 @@ function ProjectPage(props) {
             </section>
           );
         })}
-        <h2 className='sectionHeader'>Next project</h2>
+        <h2 className='sectionHeader'>Next</h2>
 
         <Project
           name={projects[nextProjectNumber].name}
