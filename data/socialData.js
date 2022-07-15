@@ -1,11 +1,5 @@
 const socialData = [
   {
-    id: 'mail',
-    text: 'Send a mail',
-    link: 'mailto:denis@kplv.ru?subject=Product Designer',
-    src: '/social/mail.svg',
-  },
-  {
     id: 'arena',
     text: 'Are.na',
     link: 'http://are.na/denis-kopylov',
@@ -29,6 +23,18 @@ const socialData = [
     link: 'https://t.me/deniskplv',
     src: '/social/telegram.svg',
   },
+  {
+    id: 'mail',
+    text: 'Send a mail',
+    link: 'mailto:denis@kplv.ru?subject=Product Designer',
+    src: '/social/mail.svg',
+  },
+  {
+    id: 'CV',
+    text: 'CV',
+    link: './Denis Kopylov CV.pdf',
+    src: '/social/CV.svg',
+  }
 ];
 
 export default socialData;
