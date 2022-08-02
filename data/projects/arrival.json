@@ -19,17 +19,102 @@
         },
         {
           "type": "image",
-          "src": "/projects/arrival/arrival-3.png"
+          "src": "/projects/arrival/arrival-1.png"
         }
       ]
     },
     {
       "id": "3",
       "content": [
-        { "type": "header", "data": "NDA project" },
+        { "type": "header", "data": "Product" },
         {
           "type": "text",
-          "data": "Unfortunately, the project is under NDA now, so I can't show much. But I'm eager to show more soon."
+          "data": "The core two products are internal agent space and customer support page. They require different approaches, yet should be simple and straightforward to use."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-2.png",
+          "caption": "Workspace & article view for a customer"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
+        { "type": "header", "data": "Data dilemma" },
+        {
+          "type": "text",
+          "data": "For an agent, we provide a bunch of services under the hood. Sure, we can show all info about a customer. But we may overload an agent with details. That’s why we highlight user current scenario. If we see a customer is in a ride, it’s likely her question connected with this ride."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-3.png",
+          "caption": "Right part of screen is flow specific"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-4.png",
+          "caption": "Info depends on a user step in a journey"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": [
+        { "type": "header", "data": "Research insights" },
+        {
+          "type": "text",
+          "data": "We conducted interviews with our agents and supervisors. It appeared that most of the support systems suffer from lack of information. So we came with an idea to enrich our smart block with links to different data pages. These block also give you some highlight of information inside them."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-5.png",
+          "caption": "Block are links to full data pages"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-6.png",
+          "caption": "Full data page example "
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "content": [
+        { "type": "header", "data": "Hub definition" },
+        {
+          "type": "text",
+          "data": "Sometimes you have to dive into a problem and search something not entirely connected to a customer. To cover these cases we designed pages for tickets, users, and vehicles. With search, deliberate filters, and highlight blocks."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-7.png",
+          "caption": "Tickets page"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-8.png",
+          "caption": "Users page"
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-9.png",
+          "caption": "Vehicles page"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "content": [
+        { "type": "header", "data": "Outcomes" },
+        {
+          "type": "text",
+          "data": "For me, It's a project which requires a deep understanding of whole company processes. Starting from our business model to vehicles hardware parts. I had a lot of stakeholders meetings and collaboration workshops with other teams. As for our team results, we implemented an MVP version of an agent portal. Also, we're constantly improving user Help & Support portal experience."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-10.png",
+          "caption": "Customer view of a help article"
         }
       ]
     }
