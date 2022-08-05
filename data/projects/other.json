@@ -94,6 +94,41 @@
           "src": "/projects/other/plant-2.png"
         }
       ]
+    },
+    {
+      "id": "7",
+      "content": [
+        { "type": "header", "data": "Tachkum" },
+        {
+          "type": "text",
+          "data": "Tachkum — is a cunning hero of Abkhazian fairy tales and my first ever font. Sans-serif with a high contrast is a perfect match for big texts in Russian, English, or Abkhazian languages. This is a result of 2 week workshop in type design."
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/font-1.png",
+          "fit": "fit"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/font-2.png",
+          "fit": "fit"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/font-3.png",
+          "fit": "fit"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/font-4.png",
+          "fit": "fit"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/font-5.png",
+          "fit": "fit"
+        }
+      ]
     }
   ]
 }
