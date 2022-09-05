@@ -28,7 +28,7 @@ export default function Home(props) {
           <meta property='og:image' content='/thumb.png' />
           <meta
             property='og:description'
-            content='Denis Kopylov — senior product designer at Arrival'
+            content='Denis Kopylov — senior product designer'
           />
           <link rel='icon' href='/favicon.ico' />
 
