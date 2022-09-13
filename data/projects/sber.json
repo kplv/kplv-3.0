@@ -5,17 +5,17 @@
       "content": [
         {
           "type": "text",
-          "data": "Devices is a startup-like project inside the largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
+          "data": "Devices is a startup-like project inside the largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
         }
       ]
     },
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "My role" },
+        { "type": "header", "data": "Role & project" },
         {
           "type": "text",
-          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs."
+          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs. We went all the way from simple MVP to the app with tens of thousands MAU. With a reasonable conversion rates."
         },
         {
           "type": "image",
@@ -41,30 +41,55 @@
     {
       "id": "4",
       "content": [
-        { "type": "header", "data": "Basic scenarios" },
+        { "type": "header", "data": "First iteration & data-driven approach" },
         {
           "type": "text",
-          "data": "Obviously, we didn't start with fancy apps. We had to find a need of discovery and navigation scenarios. So we started with MVP version. Also, we developed & updated traffic jams widget few times. Which happened to be one of the most used widgets with a DAU of few thousand people."
+          "data": "Obviously, we didn't start with fancy apps. We started with a simple card and framed the problem like this “How could we help find places in a city”. We relied primarily on voice requests, that we logged from every user. Using this data, we knew what to include in our simple MVP card of a place. Unfortunately though we weren’t able to include much requested image of a place, due to tech restrictions. "
         },
         {
           "type": "image",
-          "src": "/projects/sber/sber-3.png",
-          "caption": "Early MVP of a search app"
+          "src": "/projects/sber/sber-10.png",
+          "caption": "Iterations of a simple place card"
         },
         {
           "type": "image",
-          "src": "/projects/sber/sber-4.png",
-          "caption": "Traffic widget with directions"
+          "src": "/projects/sber/sber-11.png",
+          "caption": "Sure, direct questions were the thing"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-12.png",
+          "caption": "Data guided us on what to include in a card"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "content": [
+        { "type": "header", "data": "Collaboration is the key and a new app" },
+        {
+          "type": "text",
+          "data": "We were given green light to make something more than just a card. Full application, which should have helped users not only to find, but to discover places in a city. To address this we went through different iterations, couple of brainstorms sessions with a team, and in the end we tested and updated final designs. Also, that was the first time I led a creative session — that was fun and also helped us build stronger relationships inside a team."
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-13.png",
+          "caption": "Ideas prioritisation & team brainstorm session"
+        },
+        {
+          "type": "video",
+          "src": "/projects/sber/sber-14.mp4",
+          "caption": "Prototype that was tested in the end"
         }
       ]
     },
     {
       "id": "10",
       "content": [
-        { "type": "header", "data": "Tech restricions" },
+        { "type": "header", "data": "Tech restrictions & UX testing results" },
         {
           "type": "text",
-          "data": "Our apps might have looked native, but were built with React canvases. Often times devices didn't have powerful hardware. For example, TVs came with just enough resources to render a not so complicated web-page. Once in a while we had to cut fancy animations in order to deliver an app."
+          "data": "Often times devices didn't have powerful hardware. For example, TVs had just enough resources to render a not so complicated web-page. So once in a while we had to cut fancy animations in order to deliver an app. Also, we had to change designs a little after testing them. For example, people didn't like being rushed on booking a table, so we moved this feature deeper."
         },
         {
           "type": "video",
@@ -79,17 +104,73 @@
       ]
     },
     {
+      "id": "5",
+      "content": [
+        { "type": "header", "data": "Sneak peek into my approach" },
+        {
+          "type": "text",
+          "data": "I created JS for every feature i worked on. This helped me create scenarios and actually gave me ideas for future updates. Also, we conducted a lot of interviews, UX testings, market analysys, and we even done some diary researh as well."
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-19.png",
+          "caption": "JS hepled me to work on traffic jam widget later on"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-15.png",
+          "caption": "Traffic jam widget actually used some of JS made before"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-18.png",
+          "caption": "How I prepare UX testings. Yellow are hypothesis and purple are questions"
+        }
+      ]
+    },
+
+    {
+      "id": "7",
+      "content": [
+        { "type": "header", "data": "Design system" },
+        {
+          "type": "text",
+          "data": "Sure I used company wide design system to boost development speed. But I had to create our local design system as well. For cases when we couldn't have used shared components and had to quickly cover some UI needs. I also provided developers with specifications and dived into code with them. All to achieve best user experince possible. "
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-21.png",
+          "caption": "A small example of local components"
+        }
+      ]
+    },
+    {
       "id": "6",
       "content": [
         { "type": "header", "data": "Results" },
         {
           "type": "text",
-          "data": "We started with MVP apps and upgraded them to great big products. With bookings, voice controls, editor’s choice places, and some more. For me, it was my first experience launching a new product to the market, while also trying to understand how to design voice scenarios."
+          "data": "We started with MVP card and iterated on it untill we gained tens of thousands of MAU with reasonable conversion to monetized features. We added bookings, voice controls, editor’s choice places, and more. For me, it was my first experience launching a new product to the market, while also trying to understand how to design voice scenarios."
         },
         {
           "type": "image",
           "src": "/projects/sber/sber-5.png",
           "caption": "Voice interactions example"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-20.png",
+          "caption": "Traffic jam widget achieved great DAU"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-16.png",
+          "caption": "Some of the numbers are NDA, unfortunalely"
+        },
+        {
+          "type": "image",
+          "src": "/projects/sber/sber-17.png",
+          "caption": "The next step was an event app, but that's a different story"
         }
       ]
     }
