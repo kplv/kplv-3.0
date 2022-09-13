@@ -135,7 +135,7 @@
         { "type": "header", "data": "Design system" },
         {
           "type": "text",
-          "data": "Sure I used company wide design system to boost development speed. But I had to create our local design system as well. For cases when we couldn't have used shared components and had to quickly cover some UI needs. I also provided developers with specifications and dived into code with them. All to achieve best user experince possible. "
+          "data": "Sure I used company wide design system to boost development speed. But I had to create our local design system as well. For cases when we couldn't have used shared components and had to quickly cover some UI needs. I also provided developers with specifications and dived into code with them. All to achieve best user experience possible. "
         },
         {
           "type": "image",
