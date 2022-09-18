@@ -20,6 +20,10 @@
         {
           "type": "video",
           "src": "/projects/other/maestrello-1.mp4"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/maestrello-2.png"
         }
       ]
     },
@@ -34,6 +38,11 @@
         {
           "type": "image",
           "src": "/projects/other/coffee-1.png"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/coffee-2.png",
+          "caption": "All screens were approved by low-fidelity mockups first"
         }
       ]
     },
@@ -74,6 +83,11 @@
         {
           "type": "image",
           "src": "/projects/other/badoo-3.png"
+        },
+        {
+          "type": "image",
+          "src": "/projects/other/badoo-4.png",
+          "caption": "We used JTBD approach a lot. This a doc we've done after interviews"
         }
       ]
     },

@@ -5,17 +5,17 @@
       "content": [
         {
           "type": "text",
-          "data": "Arrival is a UK startup focused on full development cycle of zero-emission vehicles. It's one of the largest UK tech companies with $13 billion valuation."
+          "data": "Arrival is a UK startup focused on full development cycle of zero-emission vehicles. It's one of the largest UK tech companies with $13 billion valuation."
         }
       ]
     },
     {
       "id": "2",
       "content": [
-        { "type": "header", "data": "My role" },
+        { "type": "header", "data": "Role & project" },
         {
           "type": "text",
-          "data": "I joined the team as a senior designer at the end of 2021. Since when, I'm responsible for all customer support interactions. I formulate user scenarios, conduct UX researches, negotiate with core stakeholders, and support devs with implementation."
+          "data": "I joined the team as a senior designer at the end of 2021. Since when, I'm responsible for all customer support interactions: both from customer and our side. I formulate user scenarios, conduct UX researches, negotiate with core stakeholders, and support devs with implementation."
         },
         {
           "type": "image",
@@ -34,7 +34,7 @@
         {
           "type": "image",
           "src": "/projects/arrival/arrival-2.png",
-          "caption": "Workspace & article view for a customer"
+          "caption": "Workspace & article view for a customer"
         }
       ]
     },
@@ -44,17 +44,17 @@
         { "type": "header", "data": "Data dilemma" },
         {
           "type": "text",
-          "data": "For an agent, we provide a bunch of services under the hood. Sure, we can show all info about a customer. But we may overload an agent with details. That’s why we highlight user current scenario. If we see a customer is in a ride, it’s likely her question connected with this ride."
+          "data": "For an agent, we provide a bunch of services under the hood. Sure, we can show all info about a customer. But we may overload an agent with details. That’s why we highlight user current scenario. If we see a customer is in a ride, it’s likely her question connected with this ride."
         },
         {
           "type": "image",
           "src": "/projects/arrival/arrival-3.png",
-          "caption": "Right part of screen is flow specific"
+          "caption": "Right part of screen is flow specific"
         },
         {
           "type": "image",
           "src": "/projects/arrival/arrival-4.png",
-          "caption": "Info depends on a user step in a journey"
+          "caption": "Info depends on a user step in a journey"
         }
       ]
     },
@@ -64,7 +64,7 @@
         { "type": "header", "data": "Research insights" },
         {
           "type": "text",
-          "data": "We conducted interviews with our agents and supervisors. It appeared that most of the support systems suffer from lack of information. So we came with an idea to enrich our smart block with links to different data pages. These block also give you some highlight of information inside them."
+          "data": "We conducted interviews with our agents and supervisors. It appeared that most of the support systems suffer from lack of information. So we came with an idea to enrich our smart block with links to different data pages. These block also give you some highlight of information inside them."
         },
         {
           "type": "image",
@@ -79,12 +79,26 @@
       ]
     },
     {
+      "id": "hub",
+      "content": [
+        { "type": "header", "data": "Design system" },
+        {
+          "type": "text",
+          "data": "We had a versatile design system at Arrival, but since I had a lot of unique scenarious I had to implement a bunch of local components."
+        },
+        {
+          "type": "image",
+          "src": "/projects/arrival/arrival-11.png"
+        }
+      ]
+    },
+    {
       "id": "6",
       "content": [
         { "type": "header", "data": "Hub definition" },
         {
           "type": "text",
-          "data": "Sometimes you have to dive into a problem and search something not entirely connected to a customer. To cover these cases we designed pages for tickets, users, and vehicles. With search, deliberate filters, and highlight blocks."
+          "data": "Sometimes you have to dive into a problem and search something not entirely connected to a customer. To cover these cases we designed pages for tickets, users, and vehicles. With search, deliberate filters, and highlight blocks."
         },
         {
           "type": "image",
@@ -106,15 +120,15 @@
     {
       "id": "7",
       "content": [
-        { "type": "header", "data": "Outcomes" },
+        { "type": "header", "data": "Results" },
         {
           "type": "text",
-          "data": "For me, It's a project which requires a deep understanding of whole company processes. Starting from our business model to vehicles hardware parts. I had a lot of stakeholders meetings and collaboration workshops with other teams. As for our team results, we implemented an MVP version of an agent portal. Also, we're constantly improving user Help & Support portal experience."
+          "data": "For me, It's a project which requires a deep understanding of whole company processes. Starting from our business model to vehicles hardware parts. I had a lot of stakeholders meetings and collaboration workshops with other teams. As for our team results, we implemented an MVP version of an agent portal. Also, we're constantly improving user Help & Support portal experience."
         },
         {
           "type": "image",
           "src": "/projects/arrival/arrival-10.png",
-          "caption": "Customer view of a help article"
+          "caption": "Customer view of a help article"
         }
       ]
     }

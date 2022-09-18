@@ -5,7 +5,7 @@
       "content": [
         {
           "type": "text",
-          "data": "Devices is a startup-like project inside the largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
+          "data": "Devices is a startup-like project inside the largest bank of Russia. It enriches day to day activities with smart voice assistants. Think of it like Siri on a local market."
         }
       ]
     },
@@ -15,7 +15,7 @@
         { "type": "header", "data": "Role & project" },
         {
           "type": "text",
-          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs. We went all the way from simple MVP to the app with tens of thousands MAU. With a reasonable conversion rates."
+          "data": "I was leading design for a city discovery project. We gathered fascinating activities and plans for weekends. Together with a product manager we found a market-fit, conducted interviews and UX testings, wrote copyrights and made final designs. We went all the way from simple MVP to the app with tens of thousands MAU. With a reasonable conversion rates."
         },
         {
           "type": "image",
@@ -29,7 +29,7 @@
         { "type": "header", "data": "Consistency on all platforms" },
         {
           "type": "text",
-          "data": "Voice assistants should behave alike across all devices you’re using. Scenarios and flows are designed for mobile apps, smart TVs, tablet apps, and most importantly — voice interactions in each of them."
+          "data": "Voice assistants should behave alike across all devices. We designed scenarios and flows for mobile apps, smart TVs, tablet apps, and most importantly — voice interactions in each of them."
         },
         {
           "type": "image",
@@ -44,12 +44,12 @@
         { "type": "header", "data": "First iteration & data-driven approach" },
         {
           "type": "text",
-          "data": "Obviously, we didn't start with fancy apps. We started with a simple card and framed the problem like this “How could we help find places in a city”. We relied primarily on voice requests, that we logged from every user. Using this data, we knew what to include in our simple MVP card of a place. Unfortunately though we weren’t able to include much requested image of a place, due to tech restrictions. "
+          "data": "We didn't start with fancy apps. We started with a simple search card. Problem was framed like this “How could we help find places in a city”. Primarily we relied on voice requests from requests, who already sent us voice users. Using this data, we knew what to include in our simple MVP card of a place. Unfortunately though we weren’t able to include much requested image of a place, due to tech restrictions. But we fixed that in later versions. "
         },
         {
           "type": "image",
           "src": "/projects/sber/sber-10.png",
-          "caption": "Iterations of a simple place card"
+          "caption": "Iterations of a simple place card"
         },
         {
           "type": "image",
@@ -66,10 +66,10 @@
     {
       "id": "9",
       "content": [
-        { "type": "header", "data": "Collaboration is the key and a new app" },
+        { "type": "header", "data": "Collaboration is the key" },
         {
           "type": "text",
-          "data": "We were given green light to make something more than just a card. Full application, which should have helped users not only to find, but to discover places in a city. To address this we went through different iterations, couple of brainstorms sessions with a team, and in the end we tested and updated final designs. Also, that was the first time I led a creative session — that was fun and also helped us build stronger relationships inside a team."
+          "data": "After simple MVP card, we're given green light to make something more than just a card. Full application, which would help users not only to find, but to discover places. To address this we went through different iterations, couple of brainstorms sessions with a team, and in the end we tested and updated final designs. Also, that was the first time I led a creative session — that was fun and also helped us build stronger relationships inside a team."
         },
         {
           "type": "image",
@@ -78,8 +78,8 @@
         },
         {
           "type": "video",
-          "src": "/projects/sber/sber-14.mp4",
-          "caption": "Prototype that was tested in the end"
+          "src": "/projects/sber/sber-14.m4v",
+          "caption": "Prototype we tested in the end"
         }
       ]
     },
@@ -109,7 +109,7 @@
         { "type": "header", "data": "Sneak peek into my approach" },
         {
           "type": "text",
-          "data": "I created JS for every feature i worked on. This helped me create scenarios and actually gave me ideas for future updates. Also, we conducted a lot of interviews, UX testings, market analysys, and we even done some diary researh as well."
+          "data": "I created job stories for every feature I worked on. This helped me create scenarios and actually gave me ideas for future updates. Also, we conducted a lot of interviews, UX testings, market analysys, and we even done some diary researh as well."
         },
         {
           "type": "image",
@@ -119,7 +119,7 @@
         {
           "type": "image",
           "src": "/projects/sber/sber-15.png",
-          "caption": "Traffic jam widget actually used some of JS made before"
+          "caption": "Traffic jam widget actually used some of JS made before"
         },
         {
           "type": "image",
@@ -135,12 +135,12 @@
         { "type": "header", "data": "Design system" },
         {
           "type": "text",
-          "data": "Sure I used company wide design system to boost development speed. But I had to create our local design system as well. For cases when we couldn't have used shared components and had to quickly cover some UI needs. I also provided developers with specifications and dived into code with them. All to achieve best user experience possible. "
+          "data": "I used company wide design system to boost development speed. But I had to create our local design system as well. For cases when we couldn't have used shared components and had to quickly cover some UI needs. I also provided developers with specifications and dived into code with them. All to achieve the best user experience possible. "
         },
         {
           "type": "image",
           "src": "/projects/sber/sber-21.png",
-          "caption": "A small example of local components"
+          "caption": "Local design system"
         }
       ]
     },
@@ -150,7 +150,7 @@
         { "type": "header", "data": "Results" },
         {
           "type": "text",
-          "data": "We started with MVP card and iterated on it untill we gained tens of thousands of MAU with reasonable conversion to monetized features. We added bookings, voice controls, editor’s choice places, and more. For me, it was my first experience launching a new product to the market, while also trying to understand how to design voice scenarios."
+          "data": "We started with MVP card and iterated on it untill we gained tens of thousands of MAU with reasonable conversion to monetized features. We added bookings, voice controls, editor’s choice places, and more. For me, it was my first experience launching a new product to the market, while also trying to understand how to design voice scenarios."
         },
         {
           "type": "image",
@@ -165,7 +165,7 @@
         {
           "type": "image",
           "src": "/projects/sber/sber-16.png",
-          "caption": "Some of the numbers are NDA, unfortunalely"
+          "caption": "Some of the numbers are NDA, unfortunalely"
         },
         {
           "type": "image",
