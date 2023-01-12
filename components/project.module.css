@@ -80,6 +80,5 @@
 
   .projectText {
     font-size: var(--text);
-    opacity: 0.5;
   }
 }

@@ -100,6 +100,10 @@
           "data": "One of self-initiated projects on the same BHSAD course. Plant It allows you to grow yummy vegetables & greens at home. Full cycle of product design from research & market-fit and to final designs & presentation."
         },
         {
+          "type": "video",
+          "src": "/projects/other/plant-it-0.mp4"
+        },
+        {
           "type": "image",
           "src": "/projects/other/plant-1.png"
         },
