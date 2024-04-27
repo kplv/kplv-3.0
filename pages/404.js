@@ -7,7 +7,7 @@ function NothingFoundPage(props) {
       <h1 style={{fontSize: 'var(--h1)', height: '50vh'  }}>Nothing to see here…</h1>
       <Head>
         <title>Denis Kopylov</title>
-        <meta name='description' content='Nothing to see her…' />
+        <meta name='description' content='Nothing to see here…' />
         <meta property='og:title' content='Denis Kopylov' />
         <meta property='og:type' content='article' />
         <meta property='og:image' content='/thumb.png' />
