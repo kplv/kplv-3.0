@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": "trade",
+      "name": "Trade Republic",
+      "description": "Leading 0 → 1 projects for EU fintech startup in a hyper growth stage",
+      "image": "/projects/trade/trade-0.png",
+      "projectTags": ["nda", "fintech"],
+    "nda": true
+    },
+    {
       "id": "arrival",
       "name": "Arrival",
       "description": "Sophisticated customer care service for a UK-based startup",

@@ -61,6 +61,14 @@
       "backColor": "rgba(255, 57, 94, 0.1)",
       "isIcon": true,
       "path": "/icons/award.svg"
+    },
+    {
+      "text": "fintech",
+      "id": "fintech",
+      "textColor": "rgba(55, 157, 123, 1)",
+      "backColor": "rgba(59, 244, 155, 0.2)",
+      "isIcon": true,
+      "path": "/icons/fintech.svg" 
     }
   ]
 }

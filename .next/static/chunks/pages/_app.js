@@ -3771,7 +3771,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"about":"Senior product designer. I create innovative experiences & mentor junior designers","bottom":"Made with help of Next.js, PolySans, and VS Code"}');
+module.exports = JSON.parse('{"about":"Senior product designer. I create innovative experiences & mentor junior designers","bottom":"Made with of Next.js, PolySans, and VS Code"}');
 
 /***/ })
 
