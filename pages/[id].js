@@ -18,11 +18,11 @@ function ProjectPage(props) {
 
   function findNextProject() {
     if (projectId === "arrival") {
-      return 1;
-    } else if (projectId === "sber") {
       return 2;
+    } else if (projectId === "sber") {
+      return 3;
     } else {
-      return 0;
+      return 1;
     }
   }
 
