@@ -1,27 +1,27 @@
+import { useState } from "react";
 import classes from "./projectImage.module.css";
 import Image from "next/image";
 import ImageDescription from "./projectImageDescription";
 
 function ProjectImage(props) {
   const { src, caption, fit } = props;
-  console.log(fit)
-  let objectFit;
-  if (!fit) {
-    objectFit = "cover";
-  } else {
-    objectFit = fit;
-  }
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const objectFit = fit || "cover";
 
   return (
     <div style={{ position: "relative" }}>
       <ImageDescription caption={caption} />
-      <Image
-        src={src}
-        width="760px"
-        height="474px"
-        className={classes.image}
-        objectFit={objectFit}
-      />
+      <div className={`${classes.imageWrapper} ${isLoaded ? '' : classes.skeleton}`}>
+        <Image
+          src={src}
+          width="760"
+          height="474"
+          className={classes.image}
+          objectFit={objectFit}
+          onLoadingComplete={() => setIsLoaded(true)}
+        />
+      </div>
     </div>
   );
 }
