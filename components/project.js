@@ -9,11 +9,6 @@ import { isMobile } from 'react-device-detect';
 let variants = {};
 let intialOpacity;
 
-
-
-
-
-
 if (!isMobile) {
   intialOpacity = 0;
   variants = {
@@ -30,29 +25,26 @@ if (!isMobile) {
 
 function Project(props) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const { description, image, id, projectTags, name, nda } = props;
 
-  // New code
+  const jiggleVariants = {
+    initial: { x: 0 },
+    jiggle: { 
+      x: [0, 5, -5, 5, -5, 0],
+      transition: { duration: 0.35, type: 'spring', stiffness: 300 }
+    },
+  };
 
-const [isClicked, setIsClicked] = useState(false); // Add this line
-
-const jiggleVariants = {
-  initial: { rotate: 0 }, // Initial state, no rotation
-  jiggle: { 
-    rotate: [0, 2, -2, 2, -2, 0], // Keyframes for the jiggle effect
-    transition: { duration: 0.35 } // Jiggle lasts 0.5 seconds
-  },
-};
-
-const handleClick = () => {
-  if (nda) {
-    console.log('Project clicked, triggering jiggle'); // Add this line for debugging
-    setIsClicked(true); // Set clicked state to true to trigger animation
-    setTimeout(() => setIsClicked(false), 500); // Reset clicked state after 0.5 seconds
-  }
-};
-
-// New code end
+  const handleClick = () => {
+    if (nda) {
+      console.log('Project clicked, triggering jiggle');
+      setIsClicked(true);
+      setTimeout(() => {
+        setIsClicked(false);
+      }, 350);
+    }
+  };
 
   let projectClass;
   let link = `/${id}`;
@@ -60,8 +52,8 @@ const handleClick = () => {
   if (!nda) {
     return (
       <motion.div
-      whileHover={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+        whileHover={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
       >
         <Link href={link}>
           <div className={classes.project + ' ' + projectClass}>
@@ -99,9 +91,9 @@ const handleClick = () => {
       <motion.div
         whileHover={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
-        onClick={handleClick} // Add this line to handle click events
-        animate={isClicked ? 'jiggle' : 'initial'} // Add this line to trigger the jiggle animation
-        variants={jiggleVariants} // Add this line to define the animation variants
+        onClick={handleClick}
+        animate={isClicked ? 'jiggle' : 'initial'}
+        variants={jiggleVariants}
       >
         <div className={classes.project + ' ' + classes.locked}>
           <div className={classes.header}>
