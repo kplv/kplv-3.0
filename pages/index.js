@@ -9,13 +9,10 @@ import ProjectVideo from '../components/projectVideo';
 
 export default function Home(props) {
   const { projects } = props;
-
+  
   return (
-    <AnimatePresence>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+      
       >
         <Head>
           <title>Denis Kopylov</title>
@@ -33,14 +30,17 @@ export default function Home(props) {
           <link rel='icon' href='/favicon.ico' />
 
         </Head>
-        <div>
+        <AnimatePresence>
+        <motion.div
+      key="main"
+>
           <main>
             <HelloText />
             <ProjectList items={projects} />
           </main>
-        </div>
+        </motion.div>
+        </AnimatePresence>
       </motion.div>
-    </AnimatePresence>
   );
 }
 

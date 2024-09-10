@@ -25,7 +25,7 @@ const socialData = [
   },
   {
     id: 'mail',
-    text: 'Send a mail',
+    text: 'Mail',
     link: 'mailto:denis@kplv.ru?subject=Product Designer',
     src: '/social/mail.svg',
   },

@@ -1,6 +1,22 @@
 import classes from './Footer.module.css';
 import FooterLink from './footerLink';
 
+
+const AnimatedLink = ({ href, children }) => {
+  return (
+    <Link href={href} passHref>
+      <motion.a
+        className={classes.link}
+        whileHover={{ opacity: .5 }}
+        whileTap={{ scale: .95 }}
+        transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
+      >
+        {children}
+      </motion.a>
+    </Link>
+  );
+};
+
 function Footer(props) {
   const { items } = props;
   

@@ -4,20 +4,29 @@ import socialData from '../data/socialData';
 import Footer from './footer';
 import BottomText from './bottom-text';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useRef } from 'react';
 
 function Layout(props) {
+
+  
   return (
-    <AnimatePresence>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+    
+                 
         <Fragment>
-          <Header />
-          <main>{props.children}</main>
-          {/* это значит что внутри будет то, что между <mainfragment>ВОТ ЭТО</mainfragment> */}
-          <Footer items={socialData} />
-          <BottomText />
+            <Header />
+
+            {props.children}
+          
+              
+            {/* это значит что внутри будет то, что между <mainfragment>ВОТ ЭТО</mainfragment> */}
+            <Footer items={socialData} />
+            <BottomText />
         </Fragment>
-      </motion.div>
-    </AnimatePresence>
+
+        
+    
   );
 }
 

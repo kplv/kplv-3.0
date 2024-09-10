@@ -13,13 +13,17 @@
 
 .link {
   font-size: var(--text);
-  transition: all 0.1s ease-out;
+  
 }
 
-.link:hover {
+
+
+/* .link:hover {
   opacity: 0.4;
   transition: all 0.1s ease-out;
-}
+} */
+
+
 
 @media screen and (max-width: 428px) {
 .header {

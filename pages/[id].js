@@ -7,10 +7,15 @@ import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
+
 function ProjectPage(props) {
+  
+  
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
-  const router = useRouter();
+
+  
+  
 
   let currentProject = projects.find((obj) => {
     return obj.id === projectId;
@@ -29,10 +34,10 @@ function ProjectPage(props) {
   const nextProjectNumber = findNextProject();
 
   return (
+    <AnimatePresence>
+    
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+
     >
       {blocks.map((block) => {
         return (
@@ -92,6 +97,7 @@ function ProjectPage(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </motion.div>
+    </AnimatePresence>
   );
 }
 
