@@ -16,6 +16,9 @@ const container = {
       staggerChildren: 0.5,
       ease: [0.175, 0.885, 0.32, 1.1],
     },
+    hide: {
+      opacity: 0
+    },
   },
 };
 
@@ -42,9 +45,13 @@ const blurItem = {
 function Layout(props) {
   return (
     <Fragment>
-      <motion.div variants={container} initial="hidden" animate="show">
-        <Header variants={item} />
-
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        exit="hide"
+      >
+        <Header variants={item}/>
         {props.children}
         {/* это значит что внутри будет то, что между <mainfragment>ВОТ ЭТО</mainfragment> */}
 

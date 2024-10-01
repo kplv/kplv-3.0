@@ -8,6 +8,24 @@ import { motion, stagger } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
 function ProjectPage(props) {
+  // Animation part
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+    hide: {
+      opacity: 0,
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" },
+    show: { opacity: 1, scale: 1, y: 0, filter: "blur(0px)" },
+  };
+
+  // Animation part ends
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
 
@@ -28,10 +46,10 @@ function ProjectPage(props) {
   const nextProjectNumber = findNextProject();
 
   return (
-    <motion.div>
+    <motion.div variants={container} id>
       {blocks.map((block) => {
         return (
-          <motion.section key={block.id}>
+          <motion.section variants={item} key={block.id}>
             {block.content.map((contentItem) => {
               if (contentItem.type === "text") {
                 return <p>{contentItem.data}</p>;

@@ -13,6 +13,10 @@ const container = {
       staggerChildren: 0.25,
     },
   },
+  hide: {
+    opacity: 0,
+    transition: { duration: 1 },
+  },
 };
 
 const item = {
@@ -40,31 +44,16 @@ export default function Home(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <motion.main variants={container}>
-        <motion.div
-          variants={item}
-
-          // initial={{ opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" }}
-          // animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-          // transition={{ duration: 0.6, ease: [0.175, 0.885, 0.32, 1.1] }}
-        >
-          <HelloText />
-        </motion.div>
-        <motion.div
-          variants={item}
-
-          // initial={{ opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" }}
-          // animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-          // transition={{
-          //   duration: 0.6,
-          //   delay: 0.3,
-          //   ease: [0.175, 0.885, 0.32, 1.1],
-          // }}
-        >
-          <ProjectList items={projects} />
-        </motion.div>
-      </motion.main>
+      <AnimatePresence>
+        <motion.main variants={container} key="mainPage">
+          <motion.div variants={item} >
+            <HelloText />
+          </motion.div>
+          <motion.div variants={item}>
+            <ProjectList items={projects} />
+          </motion.div>
+        </motion.main>
+      </AnimatePresence>
     </div>
   );
 }
