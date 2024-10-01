@@ -1,5 +1,5 @@
-import Layout from "../components/layout";
 import "../styles/globals.css";
+import Layout from "../components/layout";
 import { motion, stagger, AnimatePresence } from "framer-motion";
 import Router from "next/router";
 import withYM from "next-ym";

@@ -7,6 +7,7 @@ import Head from "next/head";
 import { motion, stagger } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
+
 function ProjectPage(props) {
   // Animation part
   const container = {
@@ -46,7 +47,7 @@ function ProjectPage(props) {
   const nextProjectNumber = findNextProject();
 
   return (
-    <motion.div variants={container} id>
+    <div>
       {blocks.map((block) => {
         return (
           <motion.section variants={item} key={block.id}>
@@ -104,7 +105,7 @@ function ProjectPage(props) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </motion.div>
+    </div>
   );
 }
 
