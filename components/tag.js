@@ -1,31 +1,14 @@
-import classes from './tag.module.css';
-import Image from 'next/image';
+import classes from "./tag.module.css";
+import Image from "next/image";
 
-function Tag(props) {
-  const { backColor, text, textColor, isIcon, path } = props;
-  // console.log(props);
+export default function Tag(props) {
+  const { text, path } = props;
 
-  if (isIcon) {
-    return (
-      <span
-        className={classes.tag}
-        style={{ backgroundColor: backColor, color: textColor }}
-      >
-        <Image src={path} width='16px' height='16px' priority/>
+  return (
+    <span className={classes.tag}>
+      <Image src={path} width="20px" height="20px" priority fill="green"/>
 
-        {text}
-      </span>
-    );
-  } else {
-    return (
-      <span
-        className={classes.tag}
-        style={{ backgroundColor: backColor, color: textColor }}
-      >
-        {text}
-      </span>
-    );
-  }
+      {text}
+    </span>
+  );
 }
-
-export default Tag;

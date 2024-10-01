@@ -3,31 +3,31 @@
     {
       "id": "trade",
       "name": "Trade Republic",
-      "description": "Leading 0 → 1 projects for EU fintech startup in a hyper growth stage",
+      "description": "Fraud prevention, delightful interactions, and employee tools for Europe’s fastest-growing fintech",
       "image": "/projects/trade/trade-0.png",
-      "projectTags": ["nda", "fintech"],
+      "projectTags": ["2024", "fintech", "mobile"],
     "nda": true
     },
     {
       "id": "arrival",
       "name": "Arrival",
-      "description": "Sophisticated customer care service for a UK-based startup",
+      "description": "Chat experience, support agent's hub, and help center for a disruptive UK e-vehicles start-up",
       "image": "/projects/arrival/arrival-0.png",
-      "projectTags": ["e-vehicles", "startup", "b2b"]
+      "projectTags": ["2022","sustainability","web"]
     },
     {
       "id": "sber",
       "name": "SberDevices",
-      "description": "Launching a product for city activities and places with smart voice assistants",
+      "description": "City exploration stream, event booking, and natural language patterns for internal start-up of Russia’s largest bank",
       "image": "/projects/sber/sber-1.png",
-      "projectTags": ["city discovery", "zero to one", "b2c"]
+      "projectTags": ["2021","mobility","cross-platform"]
     },
     {
       "id": "other",
       "name": "Yandex, Badoo, and more…",
       "description": "Making apps for locals and international tech companies",
       "image": "/projects/other/badoo-0.png",
-      "projectTags": ["award", "local"]
+      "projectTags": ["2024","experiments"]
     }
   ],
   "tags": [

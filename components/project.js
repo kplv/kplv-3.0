@@ -77,6 +77,7 @@ function Project(props) {
                 variants={variants}
                 animate={isHovered ? 'open' : 'closed'}
                 initial={{ opacity: { intialOpacity } }}
+        
               >
                 <Image
                   src={image}
@@ -86,6 +87,7 @@ function Project(props) {
                   quality='100'
                   priority
                   eager
+                  className={classes.thumbnailImage}
                 ></Image>
               </motion.div>
             </div>
@@ -125,6 +127,7 @@ function Project(props) {
                 quality='100'
                 priority
                 eager
+                className={classes.thumbnailImage}
               ></Image>
             </motion.div>
           </div>

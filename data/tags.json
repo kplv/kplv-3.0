@@ -1,6 +1,56 @@
 {
   "tags": [
     {
+      "text": "2024",
+      "id": "2024",
+      "path": "/icons/year.svg"
+    },
+    {
+      "text": "2022",
+      "id": "2022",
+      "path": "/icons/year.svg"
+    },
+    {
+      "text": "2021",
+      "id": "2021",
+      "path": "/icons/year.svg"
+    },
+    {
+      "text": "Fintech",
+      "id": "fintech",
+      "path": "/icons/fintech.svg"
+    },
+    {
+      "text": "Mobile",
+      "id": "mobile",
+      "path": "/icons/mobile.svg"
+    },
+    {
+      "text": "Sustainability",
+      "id": "sustainability",
+      "path": "/icons/sustainability.svg"
+    },
+    {
+      "text": "Web",
+      "id": "web",
+      "path": "/icons/web.svg"
+    },
+    {
+      "text": "Mobility",
+      "id": "mobility",
+      "path": "/icons/mobility.svg"
+    },
+    {
+      "text": "Cross-platform",
+      "id": "cross-platform",
+      "path": "/icons/cross-platform.svg"
+    },
+    {
+      "text": "Experiments",
+      "id": "experiments",
+      "path": "/icons/experiments.svg"
+    },
+    {
       "text": "nda",
       "id": "nda",
       "textColor": "#192124",
@@ -61,14 +111,6 @@
       "backColor": "rgba(255, 57, 94, 0.1)",
       "isIcon": true,
       "path": "/icons/award.svg"
-    },
-    {
-      "text": "fintech",
-      "id": "fintech",
-      "textColor": "rgba(55, 157, 123, 1)",
-      "backColor": "rgba(59, 244, 155, 0.2)",
-      "isIcon": true,
-      "path": "/icons/fintech.svg" 
     }
   ]
 }
