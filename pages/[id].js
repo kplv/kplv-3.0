@@ -4,13 +4,30 @@ import fs from "fs/promises";
 import path from "path";
 import Project from "../components/project";
 import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, stagger } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
 function ProjectPage(props) {
+  // Animation part
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+    hide: {
+      opacity: 0,
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" },
+    show: { opacity: 1, scale: 1, y: 0, filter: "blur(0px)" },
+  };
+
+  // Animation part ends
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
-  const router = useRouter();
 
   let currentProject = projects.find((obj) => {
     return obj.id === projectId;
@@ -26,50 +43,80 @@ function ProjectPage(props) {
     }
   }
 
+  const projectContent = blocks.map((block, i) => {
+    return (
+      <motion.section variants={item} key={i}>
+        {block.content.map((contentItem) => {
+          if (contentItem.type === "text") {
+            return <p>{contentItem.data}</p>;
+          }
+
+          if (contentItem.type === "header") {
+            return <h2 className="sectionHeader">{contentItem.data}</h2>;
+          }
+
+          if (contentItem.type === "image") {
+            return (
+              <ProjectImage
+                src={contentItem.src}
+                caption={contentItem.caption}
+                fit={contentItem.fit}
+              />
+            );
+          }
+
+          if (contentItem.type === "video") {
+            return (
+              <ProjectVideo
+                src={contentItem.src}
+                caption={contentItem.caption}
+              />
+            );
+          }
+        })}
+      </motion.section>
+    );
+  });
+
   const nextProjectNumber = findNextProject();
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      {blocks.map((block) => {
-        return (
-          <section key={block.id}>
-            {block.content.map((contentItem) => {
-              if (contentItem.type === "text") {
-                return <p>{contentItem.data}</p>;
-              }
+    <div>
+      <main>{projectContent}</main>
+      {/* {blocks.map((block) => {
+        <motion.section variants={item} key={block.id}>
+          {block.content.map((contentItem) => {
+            if (contentItem.type === "text") {
+              return <p>{contentItem.data}</p>;
+            }
 
-              if (contentItem.type === "header") {
-                return <h2 className="sectionHeader">{contentItem.data}</h2>;
-              }
+            if (contentItem.type === "header") {
+              return <h2 className="sectionHeader">{contentItem.data}</h2>;
+            }
 
-              if (contentItem.type === "image") {
-                return (
-                  <ProjectImage
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                    fit={contentItem.fit}
-                  />
-                );
-              }
+            if (contentItem.type === "image") {
+              return (
+                <ProjectImage
+                  src={contentItem.src}
+                  caption={contentItem.caption}
+                  fit={contentItem.fit}
+                />
+              );
+            }
 
-              if (contentItem.type === "video") {
-                return (
-                  <ProjectVideo
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                  />
-                );
-              }
-            })}
-          </section>
-        );
-      })}
+            if (contentItem.type === "video") {
+              return (
+                <ProjectVideo
+                  src={contentItem.src}
+                  caption={contentItem.caption}
+                />
+              );
+            }
+          })}
+        </motion.section>;
+      })} */}
+
       <h2 className="sectionHeader">Next</h2>
-
       <Project
         name={projects[nextProjectNumber].name}
         description={projects[nextProjectNumber].description}
@@ -85,13 +132,14 @@ function ProjectPage(props) {
         <meta property="og:title" content="Denis Kopylov" />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/thumb.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:description"
           content="Denis Kopylov — senior product designer at Arrival"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </motion.div>
+    </div>
   );
 }
 

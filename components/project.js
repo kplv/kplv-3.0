@@ -12,11 +12,11 @@ let intialOpacity;
 if (!isMobile) {
   intialOpacity = 0;
   variants = {
-    open: { opacity: 1, transition: { duration: 0.3, type: 'ease' } },
+    open: { opacity: 1, transition: { duration: 0.45, type: 'spring'} },
     closed: {
       opacity: 0,
-      y: 24,
-      transition: { duration: 0.3, type: 'ease' },
+      y: 32,
+      transition: { duration: 0.35, type: 'spring' },
     },
   };
 } else {
@@ -36,15 +36,18 @@ function Project(props) {
     },
   };
 
+
+
   const handleClick = () => {
     if (nda) {
-      console.log('Project clicked, triggering jiggle');
+      
       setIsClicked(true);
       setTimeout(() => {
         setIsClicked(false);
       }, 350);
-    }
-  };
+      
+    } 
+  }; 
 
   let projectClass;
   let link = `/${id}`;
@@ -54,6 +57,10 @@ function Project(props) {
       <motion.div
         whileHover={() => setIsHovered(true)}
         onHoverEnd={() => setIsHovered(false)}
+        onClick={handleClick}
+        whileTap={{ scale: 0.98,
+          transition: { duration: 0.2, type: 'spring'}
+         }}
       >
         <Link href={link}>
           <div className={classes.project + ' ' + projectClass}>
@@ -70,6 +77,7 @@ function Project(props) {
                 variants={variants}
                 animate={isHovered ? 'open' : 'closed'}
                 initial={{ opacity: { intialOpacity } }}
+        
               >
                 <Image
                   src={image}
@@ -79,6 +87,7 @@ function Project(props) {
                   quality='100'
                   priority
                   eager
+                  className={classes.thumbnailImage}
                 ></Image>
               </motion.div>
             </div>
@@ -118,6 +127,7 @@ function Project(props) {
                 quality='100'
                 priority
                 eager
+                className={classes.thumbnailImage}
               ></Image>
             </motion.div>
           </div>

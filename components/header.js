@@ -1,17 +1,41 @@
-import Link from 'next/link';
-import classes from './header.module.css';
+import Link from "next/link";
+import classes from "./header.module.css";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
-function Header() {
+const AnimatedLink = ({ href, children, icon }) => {
   return (
-    <header className={classes.header}>
-      <a className={classes.link} href='/'>
-        Denis Kopylov
-      </a>
+    <Link href={href} passHref>
+      <motion.a
+        className={classes.link}
+        whileHover={{ opacity: 0.5 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
+      >
+        {children}
+      </motion.a>
+    </Link>
+  );
+};
 
-      <a className={classes.link} href='#contacts'>
-        Contacts
-      </a>
-    </header>
+function Header({ variants }) {
+  const item = variants;
+
+  return (
+    <motion.header className={classes.header} variants={item}>
+      <AnimatedLink href="/">
+        Hey 
+        <Image
+          src="/icons/hand.svg"
+          width="24px"
+          height="24px"
+          priority
+          className={classes.icon}
+        />
+         , I’m Denis Kopylov
+      </AnimatedLink>
+      <AnimatedLink href="#contacts">Contacts</AnimatedLink>
+    </motion.header>
   );
 }
 
