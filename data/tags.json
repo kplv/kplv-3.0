@@ -6,6 +6,11 @@
       "path": "/icons/year.svg"
     },
     {
+      "text": "Case in progress",
+      "id": "in-progress",
+      "path": "/icons/in-progress.svg"
+    },
+    {
       "text": "2022",
       "id": "2022",
       "path": "/icons/year.svg"
