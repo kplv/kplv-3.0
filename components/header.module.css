@@ -13,9 +13,13 @@
 
 .link {
   font-size: var(--text);
+  display: flex;
   
 }
 
+.icon {
+  padding: 0px 12px;
+}
 
 
 /* .link:hover {
