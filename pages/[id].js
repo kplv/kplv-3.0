@@ -7,7 +7,6 @@ import Head from "next/head";
 import { motion, stagger } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
-
 function ProjectPage(props) {
   // Animation part
   const container = {
@@ -44,46 +43,80 @@ function ProjectPage(props) {
     }
   }
 
+  const projectContent = blocks.map((block, i) => {
+    return (
+      <motion.section variants={item} key={i}>
+        {block.content.map((contentItem) => {
+          if (contentItem.type === "text") {
+            return <p>{contentItem.data}</p>;
+          }
+
+          if (contentItem.type === "header") {
+            return <h2 className="sectionHeader">{contentItem.data}</h2>;
+          }
+
+          if (contentItem.type === "image") {
+            return (
+              <ProjectImage
+                src={contentItem.src}
+                caption={contentItem.caption}
+                fit={contentItem.fit}
+              />
+            );
+          }
+
+          if (contentItem.type === "video") {
+            return (
+              <ProjectVideo
+                src={contentItem.src}
+                caption={contentItem.caption}
+              />
+            );
+          }
+        })}
+      </motion.section>
+    );
+  });
+
   const nextProjectNumber = findNextProject();
 
   return (
     <div>
-      {blocks.map((block) => {
-        return (
-          <motion.section variants={item} key={block.id}>
-            {block.content.map((contentItem) => {
-              if (contentItem.type === "text") {
-                return <p>{contentItem.data}</p>;
-              }
+      <main>{projectContent}</main>
+      {/* {blocks.map((block) => {
+        <motion.section variants={item} key={block.id}>
+          {block.content.map((contentItem) => {
+            if (contentItem.type === "text") {
+              return <p>{contentItem.data}</p>;
+            }
 
-              if (contentItem.type === "header") {
-                return <h2 className="sectionHeader">{contentItem.data}</h2>;
-              }
+            if (contentItem.type === "header") {
+              return <h2 className="sectionHeader">{contentItem.data}</h2>;
+            }
 
-              if (contentItem.type === "image") {
-                return (
-                  <ProjectImage
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                    fit={contentItem.fit}
-                  />
-                );
-              }
+            if (contentItem.type === "image") {
+              return (
+                <ProjectImage
+                  src={contentItem.src}
+                  caption={contentItem.caption}
+                  fit={contentItem.fit}
+                />
+              );
+            }
 
-              if (contentItem.type === "video") {
-                return (
-                  <ProjectVideo
-                    src={contentItem.src}
-                    caption={contentItem.caption}
-                  />
-                );
-              }
-            })}
-          </motion.section>
-        );
-      })}
+            if (contentItem.type === "video") {
+              return (
+                <ProjectVideo
+                  src={contentItem.src}
+                  caption={contentItem.caption}
+                />
+              );
+            }
+          })}
+        </motion.section>;
+      })} */}
+
       <h2 className="sectionHeader">Next</h2>
-
       <Project
         name={projects[nextProjectNumber].name}
         description={projects[nextProjectNumber].description}
@@ -99,6 +132,7 @@ function ProjectPage(props) {
         <meta property="og:title" content="Denis Kopylov" />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="/thumb.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           property="og:description"
           content="Denis Kopylov — senior product designer at Arrival"

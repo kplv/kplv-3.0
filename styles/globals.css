@@ -42,7 +42,7 @@ body {
   text-rendering: optimizeLegibility;
   max-width: 1024px;
   -webkit-font-smoothing: antialiased;
-  width: fit-content;
+  width: 100%; 
 }
 
 a {
