@@ -1,51 +1,76 @@
-import fs from 'fs/promises';
-import path from 'path';
-import Head from 'next/head';
-import HelloText from '../components/hello-text';
-import ProjectList from '../components/projectsList';
-import { Fragment } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ProjectVideo from '../components/projectVideo';
+import fs from "fs/promises";
+import path from "path";
+import Head from "next/head";
+import HelloText from "../components/hello-text";
+import ProjectList from "../components/projectsList";
+import { Fragment } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import ProjectVideo from "../components/projectVideo";
+
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" },
+  show: { opacity: 1, scale: 1, y: 0, filter: "blur(0px)" },
+};
 
 export default function Home(props) {
   const { projects } = props;
-  
-  return (
-      <motion.div
-      
-      >
-        <Head>
-          <title>Denis Kopylov</title>
-          <meta
-            name='description'
-            content='Denis Kopylov — senior product designer'
-          />
-          <meta property='og:title' content='Denis Kopylov' />
-          <meta property='og:type' content='article' />
-          <meta property='og:image' content='/thumb.png' />
-          <meta
-            property='og:description'
-            content='Denis Kopylov — senior product designer'
-          />
-          <link rel='icon' href='/favicon.ico' />
 
-        </Head>
-        <AnimatePresence>
+  return (
+    <div>
+      <Head>
+        <title>Denis Kopylov</title>
+        <meta
+          name="description"
+          content="Denis Kopylov — senior product designer"
+        />
+        <meta property="og:title" content="Denis Kopylov" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="/thumb.png" />
+        <meta
+          property="og:description"
+          content="Denis Kopylov — senior product designer"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <motion.main variants={container}>
         <motion.div
-      key="main"
->
-          <main>
-            <HelloText />
-            <ProjectList items={projects} />
-          </main>
+          variants={item}
+
+          // initial={{ opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" }}
+          // animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+          // transition={{ duration: 0.6, ease: [0.175, 0.885, 0.32, 1.1] }}
+        >
+          <HelloText />
         </motion.div>
-        </AnimatePresence>
-      </motion.div>
+        <motion.div
+          variants={item}
+
+          // initial={{ opacity: 0, scale: 0.98, y: 32, filter: "blur(16px)" }}
+          // animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
+          // transition={{
+          //   duration: 0.6,
+          //   delay: 0.3,
+          //   ease: [0.175, 0.885, 0.32, 1.1],
+          // }}
+        >
+          <ProjectList items={projects} />
+        </motion.div>
+      </motion.main>
+    </div>
   );
 }
 
 export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), 'data', 'data.json');
+  const filePath = path.join(process.cwd(), "data", "data.json");
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData);
 

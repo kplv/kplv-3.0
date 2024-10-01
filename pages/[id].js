@@ -4,18 +4,12 @@ import fs from "fs/promises";
 import path from "path";
 import Project from "../components/project";
 import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, stagger } from "framer-motion";
 import ProjectVideo from "../components/projectVideo";
 
-
 function ProjectPage(props) {
-  
-  
   const { blocks, projects } = props;
   const projectId = useRouter().query.id;
-
-  
-  
 
   let currentProject = projects.find((obj) => {
     return obj.id === projectId;
@@ -34,14 +28,10 @@ function ProjectPage(props) {
   const nextProjectNumber = findNextProject();
 
   return (
-    <AnimatePresence>
-    
-    <motion.div
-
-    >
+    <motion.div>
       {blocks.map((block) => {
         return (
-          <section key={block.id}>
+          <motion.section key={block.id}>
             {block.content.map((contentItem) => {
               if (contentItem.type === "text") {
                 return <p>{contentItem.data}</p>;
@@ -70,7 +60,7 @@ function ProjectPage(props) {
                 );
               }
             })}
-          </section>
+          </motion.section>
         );
       })}
       <h2 className="sectionHeader">Next</h2>
@@ -97,7 +87,6 @@ function ProjectPage(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </motion.div>
-    </AnimatePresence>
   );
 }
 

@@ -12,16 +12,17 @@ const AnimatedLink = ({ href, children, icon }) => {
         whileTap={{ scale: 0.95 }}
         transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
       >
-        
         {children}
       </motion.a>
     </Link>
   );
 };
 
-function Header() {
+function Header({ variants }) {
+  const item = variants;
+
   return (
-    <header className={classes.header}>
+    <motion.header className={classes.header} variants={item}>
       <AnimatedLink href="/">
         Hey 
         <Image
@@ -34,7 +35,7 @@ function Header() {
          , I’m Denis Kopylov
       </AnimatedLink>
       <AnimatedLink href="#contacts">Contacts</AnimatedLink>
-    </header>
+    </motion.header>
   );
 }
 
