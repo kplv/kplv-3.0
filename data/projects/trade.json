@@ -1,0 +1,97 @@
+{
+  "blocks": [
+    {
+      "id": "1",
+      "content": [
+        {
+          "type": "text",
+          "data": "Trade Republic is Europe's largest savings platform, boasting over 340 million users. I joined their design team as a product designer in 2023. My main contribution was developing financial crime solutions from scratch (0 → 1), which helped save our customers hundreds of thousands of euros. I also launched a new internal performance review service that streamlined the process and aided in retaining top talent."
+        },
+        {
+          "type": "image",
+          "src": "/projects/trade/trade-hero.png"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "content": [
+        { "type": "header", "data": "Joy and delight" },
+        {
+          "type": "text",
+          "data": "Although, not being part of my direct responsibilities, I initiated a project for improving crucial flows with impeccably crafted micro-interactions. For example, we greatly improved amount screen by guiding user thorough states and gracefully handling different corner-cases."
+        },
+        {
+          "type": "video",
+          "src": "/projects/trade/trade-2.mp4"
+        },
+        {
+          "type": "video",
+          "src": "/projects/trade/trade-pin.mp4"
+        }
+      ]
+    },
+    {
+      "id": "rdd",
+      "content": [
+        { "type": "header", "data": "Keeping customer’s date relevant" },
+        {
+          "type": "text",
+          "data": "Being compliant is one the backbones for ensuring company’s continuous growth. We built a solution which would prompt customers to check if their data is correct, and if not, allow them to update it straightaway in the same flow. One of the core metrics was high percentage of flows finished in first days, after launch and we successfully hit that target."
+        },
+        {
+          "type": "image",
+          "src": "/projects/trade/trade-rdd.png"
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "content": [
+        { "type": "header", "data": "Ways of working" },
+        {
+          "type": "text",
+          "data": "To think through complex interactions, I used Origami, Play, and After Effects for more sophisticated animations.  Every animation was also developed in close collaboration with iOS and Android developers. For input animation we had around 10+ iterations before feature was polished and covered all possible cases."
+        },
+        {
+          "type": "image",
+          "src": "/projects/trade/trade-origami.png"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "content": [
+        { "type": "header", "data": "Internal tools for growth" },
+        {
+          "type": "text",
+          "data": "I also contributed multiple times to internal tools team, by launching performance review app, and improving tools for aligning teams on company’s strategy. For performance review, for example, we team up with people team and improved the process side of things as well. "
+        },
+        {
+          "type": "image",
+          "src": "/projects/trade/trade-review.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "content": [
+        { "type": "header", "data": "Impact and results" },
+        {
+          "type": "text",
+          "data": "Through our financial crime solutions, we saved hundreds of thousands of euros for our customers and ensured no growth caps were imposed on us. We also saw a noticeable reduction in customer tickets related to financial crime. Additionally, the performance review tool received positive internal feedback for being straightforward and easy to use, compared to the previous external solution."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "content": [
+        { "type": "header", "data": "Learnings" },
+        {
+          "type": "text",
+          "data": "Working on a financial crime solution gave me valuable insight into what it takes to build a financial service at this scale. I delved deeply into both the business and regulatory aspects. I also came to understand how crucial speed to market is when customers' money is at stake."
+        }
+      ]
+    }
+  ]
+}

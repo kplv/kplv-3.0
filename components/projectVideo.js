@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
-import classes from './projectVideo.module.css';
-import ImageDescription from './projectImageDescription';
+import { useState, useRef, useEffect } from "react";
+import classes from "./projectVideo.module.css";
+import ImageDescription from "./projectImageDescription";
 
 function ProjectVideo(props) {
   const { src, caption } = props;
@@ -9,19 +9,24 @@ function ProjectVideo(props) {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.addEventListener('loadeddata', () => setIsLoaded(true));
+      videoRef.current.addEventListener("loadeddata", () => setIsLoaded(true));
     }
     return () => {
       if (videoRef.current) {
-        videoRef.current.removeEventListener('loadeddata', () => setIsLoaded(true));
+        videoRef.current.removeEventListener("loadeddata", () =>
+          setIsLoaded(true)
+        );
       }
     };
   }, []);
 
+  //Previous logic for adding loader in div videoWrapper
+  // <div className={`${classes.videoWrapper} ${isLoaded ? '' : classes.skeleton}`}></div>
+
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: "relative" }}>
       <ImageDescription caption={caption} />
-      <div className={`${classes.videoWrapper} ${isLoaded ? '' : classes.skeleton}`}>
+      <div className={classes.videoWrapper}>
         <video
           ref={videoRef}
           className={classes.video}
@@ -37,4 +42,3 @@ function ProjectVideo(props) {
 }
 
 export default ProjectVideo;
-

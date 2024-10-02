@@ -38,6 +38,8 @@ function ProjectPage(props) {
       return 2;
     } else if (projectId === "sber") {
       return 3;
+    } else if (projectId === "other") {
+      return 0;
     } else {
       return 1;
     }
@@ -149,6 +151,7 @@ export async function getStaticPaths() {
   return {
     paths: [
       // String variant:
+      "/trade",
       "/arrival",
       "/sber",
       "/other",
