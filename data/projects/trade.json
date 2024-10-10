@@ -32,6 +32,20 @@
       ]
     },
     {
+      "id": "ato",
+      "content": [
+        { "type": "header", "data": "Blocked account. Challenging status quo " },
+        {
+          "type": "text",
+          "data": "Fraud cases not only damage customer, but also bear significant risks for company’s reputation and ability to growth. Usually companies would block your account if there is a fraud suspicion, but after few explorations and internal discussions we went with more friendlier approach of restricting sensitive customer’s actions, while we investigate the case. "
+        },
+        {
+          "type": "image",
+          "src": "/projects/trade/trade-ato.png"
+        }
+      ]
+    },
+    {
       "id": "rdd",
       "content": [
         { "type": "header", "data": "Keeping customer’s date relevant" },
